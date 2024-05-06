@@ -4,7 +4,9 @@ export const HomePage = () => {
   return (
     <div>
       <h1>HOME</h1>
-      <p>solo está en mi rama esto</p>
+      <button>Super Guau</button>
+      <button>Guau</button>
+      <button>Skip</button>
     </div>
   );
 };
