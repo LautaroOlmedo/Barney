@@ -1,1 +1,6 @@
-export type Admin = {};
+import { User } from "./User";
+
+export type Admin = {
+    User: User;
+
+};
