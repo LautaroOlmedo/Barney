@@ -1,5 +1,5 @@
 import React from 'react';
-import './scr/common/global.css';
+
 
 
 import './profile.css';
