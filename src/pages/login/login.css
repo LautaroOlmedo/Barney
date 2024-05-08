@@ -78,11 +78,12 @@
   height: 83px;
   object-fit: cover;
 }
+
 .tinder-1-icon {
   width: 252px;
   height: 101px;
   margin-left: -32px;
-}
+} 
 .frame-item,
 .frame1 {
   position: absolute;
