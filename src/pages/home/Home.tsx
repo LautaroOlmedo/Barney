@@ -1,7 +1,6 @@
 import React from "react";
 import { Dog } from "../../types/Dog";
 import { User } from "../../types/User";
-let fakeDataDogs: Dog[];
 
 export const HomePage = () => {
   // traer dogs
@@ -15,11 +14,11 @@ export const HomePage = () => {
       <h1>HOME</h1>
 
       <div>
-        {fakeDataDogs.length ? (
+        {/* {fakeDataDogs.length ? (
           fakeDataDogs.map((dog: Dog, index) => <p></p>)
         ) : (
           <p>not data to display</p>
-        )}
+        )} */}
       </div>
 
       <button onClick={(e) => addToLikes(e)}>Super Guau</button>
