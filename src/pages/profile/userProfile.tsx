@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-import './UserProfile.css';
+import './userProfile.css';
 
 
 export const UserProfilePage:  React.FC <{}> = () => {
