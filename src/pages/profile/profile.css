@@ -1,0 +1,296 @@
+.btneditarperfil,
+.fotoperro-icon {
+  position: absolute;
+  border-radius: 50%;
+}
+.fotoperro-icon {
+  top: 80px;
+  left: 111px;
+  width: 172px;
+  height: 172px;
+  object-fit: cover;
+}
+.btneditarperfil {
+  top: 408px;
+  left: 283px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--white);
+  width: 77px;
+  height: 77px;
+}
+.btnajustes:hover,
+.btneditarperfil:hover {
+  background-color: var(--color-silver-100);
+}
+.ajustes,
+.edita-perfil {
+  position: absolute;
+  top: 491px;
+  left: 47px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.edita-perfil {
+  left: 284px;
+}
+.btnajustes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  background-color: var(--white);
+  width: 77px;
+  height: 77px;
+}
+.vector-icon {
+  position: absolute;
+  height: 57.14%;
+  width: 57.14%;
+  top: 22.08%;
+  right: 20.78%;
+  bottom: 20.78%;
+  left: 22.08%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.btnajustes-parent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 408px;
+  left: 34px;
+  width: 77px;
+  height: 77px;
+}
+.sube-fotos {
+  position: absolute;
+  top: 113px;
+  left: 13px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.btnsubirfoto,
+.ellipse-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  background-color: var(--color-saddlebrown);
+  width: 101px;
+  height: 101px;
+}
+.btnsubirfoto:hover {
+  background-color: #966337;
+}
+.ellipse-div {
+  top: 82px;
+  left: 70px;
+  background-color: var(--white);
+  width: 18px;
+  height: 19px;
+}
+.vector-icon1 {
+  height: 25%;
+  width: 25.07%;
+  top: 40.59%;
+  right: 37.46%;
+  bottom: 34.41%;
+  left: 37.46%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.ioncamera,
+.vector-icon1,
+.vector-icon2 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon2 {
+  height: 68.82%;
+  width: 87.46%;
+  top: 15.59%;
+  right: 6.27%;
+  bottom: 15.59%;
+  left: 6.27%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.ioncamera {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 14px;
+  left: 17px;
+  width: 67px;
+  height: 68px;
+}
+.ioncamera:hover {
+  background-color: var(--color-saddlebrown);
+}
+.div1 {
+  position: absolute;
+  top: 81px;
+  left: 74px;
+}
+.btnsubirfoto-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101px;
+  height: 101px;
+  color: #99582a;
+  font-family: var(--font-inter);
+}
+.sube-fotos-parent,
+.vector-icon3 {
+  position: absolute;
+  top: 357px;
+  left: 146px;
+  width: 101px;
+  height: 137px;
+}
+.vector-icon3 {
+  height: 64.9%;
+  width: 64.9%;
+  top: 18.37%;
+  right: 18.37%;
+  bottom: 16.73%;
+  left: 16.73%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.bitcoin-iconsedit-filled {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 422px;
+  left: 298px;
+  width: 49px;
+  height: 49px;
+  overflow: hidden;
+}
+.frameperfil-child {
+  position: absolute;
+  top: 515px;
+  left: -220px;
+  box-shadow: 0 100px 150px #73648a inset;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 5px solid var(--color-8);
+  box-sizing: border-box;
+  width: 833px;
+  height: 502px;
+}
+.desbloquea-nuevos-perfiles {
+  margin-block-start: 0;
+  margin-block-end: 2px;
+}
+.y-ubicaciones {
+  margin: 0;
+}
+.desbloquea-nuevos-perfiles-container {
+  margin: 0;
+  position: absolute;
+  top: calc(50% + 126px);
+  left: calc(50% - 151.5px);
+  font-size: var(--font-size-6xl);
+  line-height: 24px;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--white);
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btnsuscripcion-child,
+.panelbtncontrol-icon {
+  position: absolute;
+  top: 773px;
+  left: 0;
+  width: 393px;
+  height: 79px;
+}
+.btnsuscripcion-child {
+  top: 0;
+  box-shadow: 0 4px 15px #73648a inset;
+  border-radius: var(--br-11xl);
+  background-color: var(--white);
+  border: 5px solid var(--color-8);
+  box-sizing: border-box;
+  width: 300px;
+  height: 67px;
+  cursor: pointer;
+}
+.consigue-barneygold {
+  margin: 0;
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  font-size: 28px;
+  line-height: 24px;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 800;
+  font-family: var(--font-es-peak-trial);
+  color: var(--color);
+  text-align: left;
+  width: 264px;
+}
+.btnsuscripcion {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 639px;
+  left: 47px;
+  width: 300px;
+  height: 67px;
+}
+.btnsuscripcion:hover {
+  cursor: pointer;
+}
+.aos,
+.nombre {
+  position: absolute;
+  top: 0;
+  font-weight: 800;
+}
+.nombre {
+  margin: 0;
+  left: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+.aos {
+  left: 105px;
+}
+.descripcion {
+  position: absolute;
+  top: 282px;
+  left: 135px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 124px;
+  height: 45px;
+  font-size: var(--font-size-11xl);
+  font-family: var(--font-poppins);
+}
+.frameperfil {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  height: 852px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--black);
+  font-family: var(--font-es-peak-trial);
+}
