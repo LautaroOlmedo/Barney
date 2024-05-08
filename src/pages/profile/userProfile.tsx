@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
+import './UserProfile.css';
 
-import './profile.css';
 
-
-export const ProfilePage:  React.FC = () => {
+export const UserProfilePage:  React.FC <{}> = () => {
     return(
     <div className="frameperfil">
       <img
@@ -18,10 +18,10 @@ export const ProfilePage:  React.FC = () => {
       <div className="btneditarperfil"></div>
       <div className="ajustes">Ajustes</div>
       <div className="edita-perfil">Edita perfil</div>
-      <button className="btnajustes-parent" id="btnAjustes">
+      <Link to="http://localhost:3000/login" className="btnajustes-parent" id="btnAjustes">
         <div className="btnajustes"></div>
         <img className="vector-icon" alt="" src="./public/vector.svg" />
-      </button>
+      </Link>
       <div className="sube-fotos-parent">
         <div className="sube-fotos">Sube fotos</div>
         <div className="btnsubirfoto-parent">
@@ -42,7 +42,24 @@ export const ProfilePage:  React.FC = () => {
         <p className="desbloquea-nuevos-perfiles">Desbloquea nuevos perfiles</p>
         <p className="y-ubicaciones">y ubicaciones</p>
       </h3>
-      <img className="panelbtncontrol-icon" alt="" src="./public/panelbtncontrol.svg" />
+      {/* PANEL DE CONTROL */}
+      <div className="group-parent">
+          <div className="rectangle-parent">
+            <div className="rectangle-div"></div>
+            <div className="group-child3"></div>
+            <button className="heroiconsmap-pin-16-solid" id="btnUbi">
+              <img className="vector-icon5" alt="" src="./public/vector5.svg" />
+            </button>
+          </div>
+          <button className="vector-wrapper" id="btnInicio">
+            <img className="vector-icon6" alt="" src="./public/vector6.svg" />
+          </button>
+          <button className="basiluser-solid" id="btnPerfil">
+            <img className="vector-icon7" alt="" src="./public/vector7.svg" />
+          </button>
+      </div>
+      {/* PANEL DE CONTROL */}
+
 
       <button className="btnsuscripcion" id="btnSuscripcion">
         <div className="btnsuscripcion-child" id="rectangle"></div>
@@ -53,7 +70,11 @@ export const ProfilePage:  React.FC = () => {
         <div className="aos">3</div>
       </div>
     </div>
+
+      
+
     );
+    
     };
 
     

@@ -294,3 +294,102 @@
   color: var(--black);
   font-family: var(--font-es-peak-trial);
 }
+/*PANEL DE CONTROL*/
+.group-child3,
+.rectangle-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color1);
+  width: 393px;
+  height: 79px;
+}
+.group-child3 {
+  left: 272px;
+  width: 81px;
+}
+.vector-icon5 {
+  position: absolute;
+  height: 81.21%;
+  width: 62.59%;
+  top: 12.59%;
+  right: 18.62%;
+  bottom: 6.21%;
+  left: 18.79%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.heroiconsmap-pin-16-solid {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  left: 282px;
+  width: 58px;
+  height: 58px;
+  overflow: hidden;
+  opacity: 0.5;
+}
+.rectangle-parent,
+.vector-icon6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 393px;
+  height: 79px;
+}
+.vector-icon6 {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 6px;
+  left: 175px;
+  width: 57px;
+  height: 58px;
+}
+.basiluser-solid,
+.vector-icon7 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon7 {
+  height: 68.64%;
+  width: 64.56%;
+  top: 15.59%;
+  right: 17.72%;
+  bottom: 15.76%;
+  left: 17.72%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.basiluser-solid {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 10px;
+  left: 67px;
+  width: 57px;
+  height: 59px;
+  opacity: 0.5;
+}
+.group-parent {
+  align-self: stretch;
+  position: relative;
+  height: 79px;
+}
