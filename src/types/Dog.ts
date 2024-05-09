@@ -6,4 +6,5 @@ export type Dog = {
   Age: number;
   Name: string;
   Description: string;
+  images: string[];
 };
