@@ -1,8 +1,9 @@
-import { Customer } from "./Customer";
+import { User } from "./User";
 
 export type Dog = {
-    Customer: Customer;
-    Age: number;
-    Name: string;
-    Description: string;
+  ID: string;
+  User: User;
+  Age: number;
+  Name: string;
+  Description: string;
 };

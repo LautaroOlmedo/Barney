@@ -1,7 +1,8 @@
-import { Customer } from "./Customer";
+import { User } from "./User";
 import { Dog } from "./Dog";
 
 export type Match = {
-    Dog: Dog;
-    Customer: Customer;
+  ID: string;
+  Dog: Dog;
+  Users: User[];
 };
