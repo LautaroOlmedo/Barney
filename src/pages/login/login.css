@@ -73,18 +73,14 @@
 .btnolvidocontra:hover {
   cursor: pointer;
 }
-.sin-ttulo-2marron-1,
-.tinder-1-icon {
-  width: 96px;
-  position: relative;
-  height: 83px;
-  object-fit: cover;
-}
 
 .tinder-1-icon {
-  width: 252px;
-  height: 101px;
+  object-fit: cover;
+  width: 450px;
+  height: 225px;
   margin-left: -32px;
+  justify-content: center; 
+  align-items: center;
 } 
 .frame-item,
 .frame1 {
@@ -93,13 +89,15 @@
   align-items: flex-start;
 }
 .frame1 {
-  top: 0;
-  left: 21px;
-  width: 316px;
-  height: 101px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%; 
+  height: 150px; 
   flex-direction: row;
-  justify-content: flex-start;
+  position: absolute;
+  left: 70px;
+  overflow: hidden;
 }
 .frame1:hover {
   background-color: transparent;
