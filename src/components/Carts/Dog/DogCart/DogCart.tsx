@@ -11,10 +11,10 @@ export const DogCart: React.FC<{ dog: Dog; user: User }> = ({ dog, user }) => {
             </div>
           ))
         : "not images loaded"}
-      <p>name: {dog.Name != null ? dog.Name : "no hay datos para mostrar"}</p>
-      <p>age: {dog.Age}</p>
-      <p>description: {dog.Description}</p>
-      <p>customer: {user.Person.Name}</p>
+      <p>nombre: {dog.Name != null ? dog.Name : "no hay datos para mostrar"}</p>
+      <p>edad: {dog.Age}</p>
+      <p>descripción: {dog.Description}</p>
+      <p>dueño: {user.Person.Name}</p>
     </div>
   );
 };

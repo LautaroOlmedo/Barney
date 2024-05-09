@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 
 import { HomePage } from "./pages/home/Home";
 import { LoginPage } from "./pages/login";
-import { RouterLayout } from "./common/RouterLayout";
+import { RouterLayout } from "./common/routerLayout/RouterLayout";
 import { UserProfilePage } from "./pages/profile/userProfile";
 
 export const AppRouter: React.FC<{}> = () => {
