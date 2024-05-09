@@ -18,7 +18,7 @@ export const UserProfilePage:  React.FC <{}> = () => {
       <div className="btneditarperfil"></div>
       <div className="ajustes">Ajustes</div>
       <div className="edita-perfil">Edita perfil</div>
-      <Link to="http://localhost:3000/login" className="btnajustes-parent" id="btnAjustes">
+      <Link to="./userAjustes" className="btnajustes-parent" id="btnAjustes">
         <div className="btnajustes"></div>
         <img className="vector-icon" alt="" src="./public/vector.svg" />
       </Link>
@@ -27,10 +27,10 @@ export const UserProfilePage:  React.FC <{}> = () => {
         <div className="btnsubirfoto-parent">
           <div className="btnsubirfoto"></div>
           <div className="ellipse-div"></div>
-          <button className="ioncamera" id="btnAgregarFoto">
+          <Link to="" className="ioncamera" id="btnAgregarFoto">
             <img className="vector-icon1" alt="" src="./public/vector1.svg" />
             <img className="vector-icon2" alt="" src="./public/vector2.svg" />
-          </button>
+          </Link>
           <div className="div1">+</div>
         </div>
       </div>
