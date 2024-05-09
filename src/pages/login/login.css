@@ -7,25 +7,27 @@
   outline: 0;
   font-weight: 500;
   font-size: var(--font-size-base);
-  background-color: var(--color-gainsboro);
+  background-color: lightblue;
   position: absolute;
   top: 229px;
   left: 0;
-  border-radius: var(--br-mini);
+  border-radius: 20px;
   width: 352px;
   height: 44px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: center;
+  align-items: center;
   justify-content: center;
-  padding: var(--padding-3xs) var(--padding-23xl);
+  padding: 0 15px;
   box-sizing: border-box;
   color: var(--black);
+  
 }
 .ingresar {
-  position: relative;
+  padding: 0 5px;
+  position: center;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--white);
   text-align: left;
   text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
@@ -108,15 +110,15 @@
   font-weight: 500;
   font-family: var(--font-poppins);
   font-size: var(--font-size-base);
-  background-color: var(--color-gainsboro);
+  background-color: lightblue;
   top: 143px;
   left: 0;
-  border-radius: var(--br-mini);
+  border-radius: 20px;
   width: 352px;
   height: 44px;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: var(--padding-3xs) var(--padding-23xl);
+  padding: 0 15px;
   box-sizing: border-box;
   color: var(--black);
 }

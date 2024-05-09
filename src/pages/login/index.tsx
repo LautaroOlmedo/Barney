@@ -7,7 +7,7 @@ export const LoginPage = () => {
        <div className="framelogin">
         <section className="frame-wrapper">
           <div className="frame">
-            <input className="frame-child" id="contraseñaInput" type="text" />
+            <input className="frame-child" id="contraseñaInput" type="password" placeholder="Contraseña"/>
             <button className="ingresar-wrapper" id="btnLogin">
                <div className="ingresar">Ingresar</div>
              </button>
@@ -22,7 +22,7 @@ export const LoginPage = () => {
                 />
                <img className="tinder-1-icon" alt="" src="./public/img/nameYellow.png" />
              </div>
-             <input className="frame-item" id="emailImput" type="text" />
+             <input className="frame-item" id="emailImput" type="text" placeholder="Email" />
           </div>
          </section>
         </div>
