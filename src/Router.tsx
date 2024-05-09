@@ -5,13 +5,8 @@ import { Route, Routes } from "react-router-dom";
 
 import { HomePage } from "./pages/home/Home";
 import { LoginPage } from "./pages/login";
-<<<<<<< HEAD
-import { ProfilePage } from "./pages/profile/profile";
-import { RouterLayout } from "./common/routerLayout/RouterLayout";
-=======
 import { RouterLayout } from "./common/RouterLayout";
 import { UserProfilePage } from "./pages/profile/userProfile";
->>>>>>> origin/Gonzalo
 
 export const AppRouter: React.FC<{}> = () => {
   return (
