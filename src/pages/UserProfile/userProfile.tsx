@@ -1,18 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import flechaAbajo from './public/img/appLogos/logoFlechaAbajo.png'
-import perfil from './public/img/appLogos/logoPerfil.png'
-import flechaIzq from './public/img/appLogos/logoFlechaIzq.png'
-import perro from './public/img/appLogos/logoPerro.png'
-import logoMas from './public/img/appLogos/logoPlus.png'
-import logoBarney from './public/img/barneyLogos/nameBrown.png'
-import './userProfile.css';
+import "./userProfile.css";
 
-
-export const UserProfilePage:  React.FC <{}> = () => {
-    return(
-      <div className="frameperfilperro">
+export const UserProfilePage: React.FC<{}> = () => {
+  return (
+    <div className="frameperfilperro">
       <main className="frameentero">
         <div className="desktop-41">
           <div className="framesuperior">
@@ -20,7 +13,7 @@ export const UserProfilePage:  React.FC <{}> = () => {
               <img
                 className="tinder-1-icon4"
                 alt=""
-                src={logoBarney}
+                src="./public/img/barneyLogos/nameBrown.png"
               />
             </div>
             <div className="frame117">
@@ -36,7 +29,9 @@ export const UserProfilePage:  React.FC <{}> = () => {
                   <h2 className="nombreusuario">Negro</h2>
                   <div className="framesuperiorizq-child"></div>
                   <button className="btnsuscripcion3">
-                    <h1 className="consigue-barneygold2">Consigue BarneyGold</h1>
+                    <h1 className="consigue-barneygold2">
+                      Consigue BarneyGold
+                    </h1>
                   </button>
                   <button className="btnperfil2">
                     <img
@@ -59,7 +54,7 @@ export const UserProfilePage:  React.FC <{}> = () => {
                         <img
                           className="basilcaret-down-solid-icon4"
                           alt=""
-                          src={flechaIzq}
+                          src="public\img\appLogos\logoFlechaIzq.png"
                         />
                       </button>
                       <h1 className="perfil1">Perfil</h1>
@@ -100,7 +95,7 @@ export const UserProfilePage:  React.FC <{}> = () => {
                                   <img
                                     className="icround-plus-icon5"
                                     alt=""
-                                    src={logoMas}
+                                    src="public\img\appLogos\logoPlus.png"
                                   />
                                 </div>
                               </button>
@@ -114,7 +109,7 @@ export const UserProfilePage:  React.FC <{}> = () => {
                                   <img
                                     className="icround-plus-icon5"
                                     alt=""
-                                    src={logoMas}
+                                    src="public\img\appLogos\logoPlus.png"
                                   />
                                 </div>
                               </button>
@@ -125,7 +120,7 @@ export const UserProfilePage:  React.FC <{}> = () => {
                                 <img
                                   className="icround-plus-icon7"
                                   alt=""
-                                  src={logoMas}
+                                  src="public\img\appLogos\logoPlus.png"
                                 />
                               </button>
                               <div className="frame123">
@@ -134,7 +129,7 @@ export const UserProfilePage:  React.FC <{}> = () => {
                                   <img
                                     className="icround-plus-icon7"
                                     alt=""
-                                    src={logoMas}
+                                    src="public\img\appLogos\logoPlus.png"
                                   />
                                 </button>
                               </div>
@@ -146,7 +141,7 @@ export const UserProfilePage:  React.FC <{}> = () => {
                               <img
                                 className="icround-plus-icon5"
                                 alt=""
-                                src={logoMas}
+                                src="public\img\appLogos\logoPlus.png"
                               />
                             </button>
                           </div>
@@ -166,7 +161,7 @@ export const UserProfilePage:  React.FC <{}> = () => {
                               <img
                                 className="basilcaret-down-solid-icon5"
                                 alt=""
-                                src={flechaAbajo}
+                                src="public\img\appLogos\logoFlechaAbajo.png"
                               />
                             </div>
                           </div>
@@ -198,13 +193,17 @@ export const UserProfilePage:  React.FC <{}> = () => {
                       <img
                         className="icbaseline-place-icon2"
                         alt=""
-                        src={perro}
+                        src="./img/barneyLogos/namePawBrown.png"
                       />
 
                       <div className="ubicacion">Mendoza</div>
                     </div>
                   </div>
-                  <img className="frame-icon8" alt="" src="./public/frame.svg" />
+                  <img
+                    className="frame-icon8"
+                    alt=""
+                    src="./public/frame.svg"
+                  />
                 </div>
               </div>
             </div>
@@ -212,11 +211,5 @@ export const UserProfilePage:  React.FC <{}> = () => {
         </div>
       </main>
     </div>
-
-      
-
-    );
-    
-    };
-
-    
+  );
+};
