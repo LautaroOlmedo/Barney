@@ -15,7 +15,7 @@ export const LoginPage = () => {
               ¿Olvidaste tu contraseña?
              </button>
              <div className="frame1">
-               <img className="tinder-1-icon" alt="" src="./img/namePawBrown.png" />
+               <img className="tinder-1-icon" alt="" src="./img/barneyLogos/namePawBrown.png" />
              </div>
              <input className="frame-item" id="emailImput" type="text" placeholder="Email" />
           </div>
