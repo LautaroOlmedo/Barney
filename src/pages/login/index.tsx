@@ -21,7 +21,8 @@ export const LoginPage = () => {
           </div>
          </section>
         </div>
-        <Link to="/home"/>
     </div>
+
+    
   );
 };
