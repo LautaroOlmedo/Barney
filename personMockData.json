@@ -10,7 +10,8 @@
     "Username": "johndoe",
     "Password": "password123",
     "emails": ["john@example.com"],
-    "phones": ["123-456-789"]
+    "phones": ["123-456-789"],
+    "type": "admin"
   },
   {
     "Person": {
@@ -23,6 +24,7 @@
     "Username": "janesmith",
     "Password": "securepassword",
     "emails": ["jane@example.com", "jane.smith@example.com"],
-    "phones": ["987-654-321", "555-555-555"]
+    "phones": ["987-654-321", "555-555-555"],
+    "type": "admin"
   }
 ]

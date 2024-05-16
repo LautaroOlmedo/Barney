@@ -1,3 +1,4 @@
+import { Dog } from "./Dog";
 import { Person } from "./Person";
 
 export type User = {
@@ -7,4 +8,6 @@ export type User = {
   emails: string;
   phones: string;
   type: string;
+  dogs: Dog[];
+  image: string;
 };
