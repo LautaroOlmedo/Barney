@@ -1,0 +1,28 @@
+.dogProfile {
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--white, #fff);
+    display: flex;
+    gap: 20px;
+    font-size: 35px;
+    padding: 11px;
+  }
+
+  .dogImg img {
+    aspect-ratio: 0.83;
+    object-fit: auto;
+    object-position: center;
+    width: 100px;
+  }
+  .dogName {
+    font-family: ES Peak TRIAL, sans-serif;
+    margin-top: 10px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+ 

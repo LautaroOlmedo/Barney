@@ -9,7 +9,7 @@ export let dogData: Dog[] = [
     Name: "Cuco",
     Age: 5,
     Description: "Buldog Frances",
-    images: [],
+    images: ["/img/dogProfileImg/perfilCuco.jpeg"],
     matches: [],
     likes: [],
     User:{

@@ -9,7 +9,7 @@ return(
         <div className="divPerros">
             <h1>Perros</h1>    
         </div>
-        <div>
+        <div className="div2">
             <DogCartPresentation dog={dog} />
         </div>
     </div>

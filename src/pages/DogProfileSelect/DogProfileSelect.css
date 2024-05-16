@@ -13,25 +13,22 @@
 
   .divPerros {
     font-family: ES Peak TRIAL, sans-serif;
-    margin: auto 0;
-  }
-  .div-4 {
-    align-self: center;
     display: flex;
-    margin-top: 25px;
-    gap: 20px;
-    font-size: 20px;
-    font-weight: 700;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
-  .divButtonYo {
-    font-family: ES Peak TRIAL, sans-serif;
-    border-radius: 15px;
-    border-color: rgba(115, 100, 138, 1);
+
+  .divPerros h1{
+    font-size: 50px;
+  }
+  .div2{
+    border-color: rgba(0, 0, 0, 1);
     border-style: solid;
     border-width: 1px;
-    background-color: var(--white, #fff);
-    justify-content: center;
-    padding: 8px 54px;
+    background-color: #000;
+    min-height: 1px;
+    margin-top: 54px;
+    width: 100%;
   }
   
