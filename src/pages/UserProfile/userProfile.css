@@ -1,231 +1,110 @@
-/* Estilos para el contenedor principal */
-.frameperfilperro {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: -110px;
-  gap: 36px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
 }
-
-/* Estilos para la parte superior */
-.framesuperior {
-  align-items: center;
-  justify-content: flex-start;
-  display: flex;
-  flex-direction: column;
-  margin-top: -73px;
-}
-
-.framelogo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 616px;
-  overflow: hidden;
-}
-
-.tinder-1-icon4 {
-  width: 262px;
-  height: 73px;
-  object-fit: cover;
-}
-
-.framesuperiorizq {
-  position: relative;
-  width: 391px;
-  height: 172px;
-}
-
-.bandejasuperiorperfil {
-  background-color: var(--color1);
-  width: 391px;
-  height: 74px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.fotousuario-icon {
-  position: absolute;
-  top: 7px;
-  left: 13px;
-  /* width: 52px;
-  height: 52px; */
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.nombreusuario {
-  position: absolute;
-  top: 22px;
-  left: 84px;
-  font-size: inherit;
-  font-weight: 800;
-}
-
-.btnsuscripcion3 {
-  cursor: pointer;
-  position: absolute;
-  top: 89px;
-  left: 46px;
-  width: 300px;
-  height: 50px;
-  background-color: var(--white);
-  border: 5px solid var(--color-8);
-  border-radius: 11px;
-}
-
-.consigue-barneygold2 {
-  font-size: 40px;
-  font-weight: 800;
-  font-style: italic;
-  color: var(--color);
-}
-
-.btnperfil2 {
-  cursor: pointer;
-  position: absolute;
-  top: 7px;
-  left: 318px;
-  width: 57px;
-  height: 59px;
-  background-color: transparent;
-  border: 0;
-}
-
-.vector-icon17 {
-  position: absolute;
-  top: 15.59%;
-  right: 17.72%;
-  bottom: 15.76%;
-  left: 17.72%;
-  max-width: 64.56%;
-  max-height: 68.64%;
-}
-
-/* Estilos para la parte inferior */
-.frameinferior {
-  align-items: flex-start;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.frameperfilyfotoperro {
-  align-items: flex-start;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-  width: 1113px;
-}
-.framefotoperroprincipal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.framefotoperroprincipal img {
+.titulo {
   width: 100%;
-  max-width: 500px; /* Máximo ancho para las imágenes */
-}
-
-.frameeditarperfil1 {
+  height: 60px;
+  background-color: #c57a24;
+  color: white;
+  display: flex;
   align-items: center;
+  padding: 0 20px;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-}
-
-.framepanelperfil {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-}
-
-.btnvolverhome1 {
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-}
-
-.basilcaret-down-solid-icon4 {
-  width: 40px;
-  height: 40.1px;
-}
-
-.perfil1 {
-  font-size: inherit;
-  font-weight: 800;
-}
-
-.seleccionaryooperro {
   align-items: center;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 0 var(--padding-3xs);
+  padding: 20px;
+  height: calc(60vh - 6px);
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.btnperfilusuarioedit1 {
+.perfil {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.btnperfilusuarioedit-item {
-  background-color: var(--white);
-  border: 4px solid var(--color-8);
-  border-radius: 4px;
-  width: 129px;
-  height: 29px;
+.userCard {
+  width: 100%;
+  padding: 20px;
+  background-color: #fafafa;
+
+  margin-bottom: 20px;
 }
 
-.yo1 {
-  font-size: inherit;
-  font-weight: 700;
-}
-
-.btnperfilperroedit1 {
+.btn {
+  /* 
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
   cursor: pointer;
-  background-color: var(--white);
-  border: 1px solid var(--color-8);
-  border-radius: 4px;
-  width: 129px;
-  height: 29px;
+  text-align: var(userCard); */
+  width: 350px;
+  box-shadow: 0 4px 15px #73648a inset;
+  border-radius: 15px;
+  background-color: white;
+  border: 5px solid purple;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+
+  height: 50.7px;
+  cursor: pointer;
+}
+
+.actualizar-btn:hover {
+  background-color: #45a049;
+}
+
+.imgPerro {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
-}
-
-.perro2 {
-  font-size: inherit;
-  font-family: var(--font-es-peak-trial);
-  color: var(--black);
-  text-align: left;
-}
-
-/* Estilos para otros elementos en la parte inferior */
-.framefotosusuario {
   align-items: center;
+  overflow: hidden;
+  flex-grow: 1;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.img {
   display: flex;
-  flex-direction: column;
+  border-radius: 15px;
+  align-items: center;
+
+  height: 400px;
+  object-fit: contain;
 }
 
-.btnfotoprincipal1 {
-  align-items: center;
-}
-@media (max-width: 480px) {
-  .frameperfilyfotoperro {
-    flex-direction: column; /* Cambiar a dirección de columna */
-    align-items: center;
+@media (max-width: 380px) {
+  .perfil {
+    padding: 10px;
   }
 
-  .framefotoperroprincipal {
-    width: 100%;
-    max-width: 500px; /* Ancho máximo del contenedor */
+  .userCard {
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 8px;
   }
 }
