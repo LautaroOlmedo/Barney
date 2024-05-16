@@ -3,6 +3,6 @@ import { Dog } from "./Dog";
 
 export type Match = {
   ID: string;
-  Dog: Dog;
+  Dogs: Dog[];
   Users: User[];
 };

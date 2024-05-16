@@ -1,3 +1,5 @@
+import { Like } from "./Like";
+import { Match } from "./Match";
 import { User } from "./User";
 
 export type Dog = {
@@ -7,4 +9,6 @@ export type Dog = {
   Name: string;
   Description: string;
   images: string[];
+  matches: Match[];
+  likes: Dog[];
 };
