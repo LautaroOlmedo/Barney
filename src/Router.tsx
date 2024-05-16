@@ -18,9 +18,7 @@ export const AppRouter: React.FC<{}> = () => {
         <Route path="/home" element={<HomePage dog={dogData[1]} />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/profile" element={<UserProfilePage user={data[0]} />} />
-        <Route
-          path="/dogProfileSelect"
-          element={<DogProfileSelect dog={dogData[0]} />}
+        <Route path="/dogProfileSelect" element={<DogProfileSelect dog={dogData[0]} />}
         />
         // si la ruta no tiene que tener navBar o footer va por acá bajo
       </Route>
