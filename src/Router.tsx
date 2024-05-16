@@ -17,10 +17,6 @@ export const AppRouter: React.FC<{}> = () => {
       <Route path="/" element={<RouterLayout />}>
         <Route path="/home" element={<HomePage dog={dogData[1]} />} />
         <Route path="/login" element={<LoginPage />} />
-<<<<<<< HEAD
-        <Route path="/profile" element={<UserProfilePage user={data[0]} />} />
-        <Route path="/dogProfileSelect" element={<DogProfileSelect dog={dogData[0]} />}
-=======
         <Route
           path="/login/errors"
           element={<LoginError error="Usuario o contraseña incorrectos" />}
@@ -36,7 +32,6 @@ export const AppRouter: React.FC<{}> = () => {
         <Route
           path="/dogProfileSelect"
           element={<DogProfileSelect dog={dogData[0]} />}
->>>>>>> origin/development
         />
         // si la ruta no tiene que tener navBar o footer va por acá bajo
       </Route>
