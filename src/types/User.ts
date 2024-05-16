@@ -7,4 +7,5 @@ export type User = {
   emails: string[];
   phones: string[];
   type: string;
+  image: string;
 };

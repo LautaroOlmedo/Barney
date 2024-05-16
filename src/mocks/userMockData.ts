@@ -13,5 +13,6 @@ export let data: User[] = [
     emails: ["john@example.com"],
     phones: ["123-456-789"],
     type: "admin",
+    image: "./img/UserProfilePicture/avatar2.png",
   },
 ];
