@@ -8,9 +8,6 @@ export type User = {
   emails: string;
   phones: string;
   type: string;
-<<<<<<< HEAD
-=======
   dogs: Dog[];
->>>>>>> origin/development
   image: string;
 };

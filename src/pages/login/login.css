@@ -2,6 +2,7 @@
 .ingresar {
   font-family: var(--font-poppins);
 }
+
 /*Frame-child es el div donde se ingresa la contraseña*/
 .frame-child {
   border: 0;
@@ -22,8 +23,8 @@
   padding: 0 15px;
   box-sizing: border-box;
   color: var(--black);
-  
 }
+
 /*Es la palabra "ingresar dentro del botton igresar"*/
 .ingresar {
   padding: 0 5px;
