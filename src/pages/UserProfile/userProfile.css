@@ -4,11 +4,16 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.navbar {
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+.titulo {
   width: 100%;
   height: 60px;
-  background-color: #333;
+  background-color: #c57a24;
   color: white;
   display: flex;
   align-items: center;
@@ -22,19 +27,27 @@
   padding: 20px;
   height: calc(60vh - 6px);
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .perfil {
   display: flex;
+
   flex-direction: column;
   align-items: flex-start;
-  width: 350px;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .userCard {
-  width: 100%; /* Ancho de tu componente de datos de perfil */
-  /* Alto de tu componente de datos de perfil */
-  background-color: #f0f0f0;
+  width: 100%;
+  padding: 20px;
+  background-color: #fafafa;
+
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -51,6 +64,7 @@
   background-color: white;
   border: 5px solid purple;
   box-sizing: border-box;
+  transition: background-color 0.3s ease;
 
   height: 50.7px;
   cursor: pointer;
@@ -66,14 +80,31 @@
   align-items: center;
   overflow: hidden;
   flex-grow: 1;
-  height: 100%;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .img {
+  display: flex;
   border-radius: 15px;
-  height: auto;
-  width: 100%;
-  max-height: 100%;
+  align-items: center;
+
+  height: 400px;
   object-fit: contain;
+}
+
+@media (max-width: 380px) {
+  .perfil {
+    padding: 10px;
+  }
+
+  .userCard {
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 8px;
+  }
 }

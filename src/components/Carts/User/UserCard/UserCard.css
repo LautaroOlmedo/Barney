@@ -1,12 +1,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: white;
   /* margin: 0;
     padding: 0; */
 }
 .profile {
   max-width: 400px;
-  background-color: #fff;
+  background-color: white;
   margin: 25px auto;
   padding: 20px;
   border-radius: 10px;
