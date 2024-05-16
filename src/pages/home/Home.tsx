@@ -5,6 +5,7 @@ import { User } from "../../types/User";
 export const HomePage = () => {
   // traer dogs
   const addToLikes = (dog: any) => {};
+
   function dog(value: Dog, index: number, array: Dog[]): void {
     throw new Error("Function not implemented.");
   }
