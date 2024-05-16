@@ -31,7 +31,7 @@ export const HomePage: React.FC<{ dog: Dog }> = ({ dog }) => {
                   className="frame-icon1"
                   id="mensajesInicio"
                   alt=""
-                  src="./img/appLogos/filters.png"
+                  src="./img/appLogos/chat.png"
                 />
 
                 <div className="ellipse-parent">
@@ -56,8 +56,8 @@ export const HomePage: React.FC<{ dog: Dog }> = ({ dog }) => {
                     <div className="frame9">
                       <div className="frame10">
                         <div className="descripcion">
-                          <div className="nombre">Barni,</div>
-                          <div className="nombre">3</div>
+                          <div className="nombre">{dogData[0].Name}</div>
+                          {/* <div className="nombre">3</div> */}
                         </div>
                       </div>
                     </div>
@@ -67,7 +67,7 @@ export const HomePage: React.FC<{ dog: Dog }> = ({ dog }) => {
                           <img
                             className="icbaseline-place-icon"
                             alt=""
-                            src="./img/barneyLogos/namePawBrown.png"
+                            src="./img/appLogos/location.png"
                           />
 
                           <div className="mendoza">Mendoza</div>
@@ -75,13 +75,13 @@ export const HomePage: React.FC<{ dog: Dog }> = ({ dog }) => {
                       </div>
                     </div>
                   </div>
-                  <button className="frame13" id="btnDescripcion">
+                  {/* <button className="frame13" id="btnDescripcion">
                     <img
                       className="frame-icon2"
                       alt=""
-                      src="./img/barneyLogos/namePawBrown.png"
+                      src="./public/frame.svg"
                     />
-                  </button>
+                  </button> */}
                 </div>
               </div>
               <div className="frame14">
@@ -93,26 +93,27 @@ export const HomePage: React.FC<{ dog: Dog }> = ({ dog }) => {
                         <img
                           className="mdipets-icon"
                           alt=""
-                          src="./img/appLogos/guau.png" // ---> IMAGEN SUPER GUAU!! SOLO PARA PREMIUM
+                          src="./img/appLogos/superGuau.png"
                         />
                       </button>
                     </div>
                   </div>
-                  {/* <div className="frame18">
+                  <div className="frame18">
                     <button className="frame19">
                       <div className="ellipse-div"></div>
                       <img
                         className="vector-icon"
                         alt=""
-                        src="./img/appLogos/guau.png" // ---> IMAGEN GUAU!!
+                        src="./img/appLogos/guau.png"
                       />
                     </button>
-                  </div> */}
+                  </div>
                   <button className="frame20" id="btnDislike">
+                    <div className="ellipse-div"></div>
                     <img
-                      className="frame-child1"
+                      className="vector-icon"
                       alt=""
-                      src="./img/appLogos/ghosted.png" // ---> IMAGEN GHOSTED
+                      src="./img/appLogos/ghosted.png"
                     />
                   </button>
                 </div>
@@ -120,7 +121,7 @@ export const HomePage: React.FC<{ dog: Dog }> = ({ dog }) => {
             </div>
           </div>
         </div>
-        <div className="group-parent">
+        {/* <div className="group-parent">
           <div className="rectangle-parent">
             <div className="group-item"></div>
             <div className="group-inner"></div>
@@ -134,7 +135,7 @@ export const HomePage: React.FC<{ dog: Dog }> = ({ dog }) => {
           <button className="basiluser-solid" id="btnPerfil">
             <img className="vector-icon3" alt="" src="./public/vector3.svg" />
           </button>
-        </div>
+        </div> */}
       </section>
     </div>
   );
