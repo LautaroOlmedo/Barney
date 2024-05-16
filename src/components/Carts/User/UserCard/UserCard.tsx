@@ -3,6 +3,9 @@ import "./UserCard.css";
 export const UserCard: React.FC<{ user: User }> = ({ user }) => {
   return (
     <div className="profile">
+      <div>
+        <img className="image" src={user.image} alt="" />
+      </div>
       <p className="bold">Nombre:</p> <p>{user.Person.Name}</p>
       <p className="bold">Apellido:</p> <p>{user.Person.Lastname}</p>
       <p className="bold">Edad:</p> <p>{user.Person.age}</p>
