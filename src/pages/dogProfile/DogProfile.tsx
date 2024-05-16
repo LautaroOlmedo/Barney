@@ -14,8 +14,6 @@ export const DogProfilePage: React.FC<{ dog: Dog; user: User }> = ({
           <DogCart dog={dog} user={user} />
         </div>
       }
-
-      <button>Actualizar información</button>
     </div>
   );
 };
