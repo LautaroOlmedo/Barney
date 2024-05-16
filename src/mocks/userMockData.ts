@@ -10,8 +10,8 @@ export let data: User[] = [
     },
     Username: "johndoe",
     Password: "password123",
-    emails: ["john@example.com"],
-    phones: ["123-456-789"],
+    emails: "john@example.com",
+    phones: "123-456-789",
     type: "admin",
   },
 ];
