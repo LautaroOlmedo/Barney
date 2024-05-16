@@ -1,4 +1,4 @@
-.div {
+.div{
     background-color: var(--white, #fff);
     display: flex;
     max-width: 480px;
@@ -11,7 +11,7 @@
     padding: 52px 0 80px;
   }
 
-  .divPerros {
+  .divPerros{
     font-family: ES Peak TRIAL, sans-serif;
     display: flex;
     align-items: center;
