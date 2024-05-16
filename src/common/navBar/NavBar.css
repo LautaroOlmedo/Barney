@@ -1,6 +1,5 @@
 .navbar {
   background-color: #3E3232;
-  color: #fff;
   padding: 10px 20px;
 }
 
@@ -15,7 +14,7 @@
 
 .navbar-link {
   text-decoration: none;
-  color: #fff;
+  color: #f4f4f4;
 }
 
 .navbar-link:hover {
