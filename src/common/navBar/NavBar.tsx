@@ -1,19 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./NavBar.css"
 
 export const NavBar: React.FC<{}> = () => {
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ marginRight: "20px" }}>
-        <Link to={"/profile/:id"}>
-          <button>Terminos y condiciones</button>
-        </Link>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-item">
+          <Link to={"/profile/:id"} className="navbar-link">
+            Terminos y condiciones
+          </Link>
+        </div>
+        <div>
+          <Link to={"/mypets/:id" } className="navbar-link">
+            ¿Quienes somos?
+          </Link>
+        </div>
       </div>
-      <div>
-        <Link to={"/mypets/:id"}>
-          <button>¿Quienes somos?</button>
-        </Link>
-      </div>
-    </div>
+    </nav>
   );
 };
