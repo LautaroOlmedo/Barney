@@ -6,4 +6,6 @@ export type User = {
   Password: string;
   emails: string[];
   phones: string[];
+  type: string;
+  image: string;
 };

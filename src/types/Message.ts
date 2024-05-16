@@ -1,8 +1,9 @@
 import { Chat } from "./Chat";
-import { Customer } from "./Customer";
+import { User } from "./User";
 
 export type Message = {
-    Message: string;
-    Customer: Customer;
-    Chat: Chat;
+  ID: string;
+  Message: string;
+  Customer: User;
+  Chat: Chat;
 };
