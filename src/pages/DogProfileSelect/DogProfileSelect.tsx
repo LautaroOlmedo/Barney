@@ -5,8 +5,8 @@ import "./DogProfileSelect.css";
 
 export const DogProfileSelect: React.FC <{dog:Dog}> = ({ dog }) => {
 return(
-    <div className="div">
-        <div className="divPerros">
+    <div className="Principal">
+        <div className="Perros">
             <h1>Perros</h1>    
         </div>
         <div className="div2">
