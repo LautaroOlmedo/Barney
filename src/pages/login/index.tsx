@@ -16,7 +16,7 @@ export const LoginPage = () => {
              <div className="frame1">
                <img className="tinder-1-icon" alt="" src="./img/barneyLogos/namePawBrown.png" />  
              </div>
-             <input className="frame-item" id="emailImput" type="text" placeholder="Email"/> 
+             <input className="frame-item" id="emailImput" type="text" placeholder="Email" /> 
           </div>
          </section>
         </div>
