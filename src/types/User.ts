@@ -10,4 +10,5 @@ export type User = {
   type: string;
   dogs: Dog[];
   image: string;
+  dogs: Dog[];
 };
