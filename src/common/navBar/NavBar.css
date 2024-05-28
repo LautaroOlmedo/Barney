@@ -1,6 +1,10 @@
 .navbar {
-  background-color: #3E3232;
+  background-color: #3e3232;
   padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -19,4 +23,7 @@
 
 .navbar-link:hover {
   text-decoration: underline;
+}
+body {
+  margin-top: 60px;
 }

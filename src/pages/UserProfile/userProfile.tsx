@@ -1,7 +1,6 @@
 import React from "react";
 import { User } from "../../types/User";
 import { UserCard } from "../../components/Carts/User/UserCard/UserCard";
-import { NavBar } from "../../common/navBar/NavBar";
 import "./userProfile.css";
 
 export const UserProfilePage: React.FC<{ user: User }> = ({ user }) => {
