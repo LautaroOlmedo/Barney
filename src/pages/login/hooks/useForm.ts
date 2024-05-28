@@ -1,35 +1,40 @@
 import { useState } from "react";
 
-export const useForm = (initialForm: any, validateForm: any) => {
-    const [form,setForm] = useState(initialForm);
-    const [errors,setErrors] = useState({});
-    const [loading,setLoading] = useState(false);
-    const [response,setResponse] = useState(null);
+export interface Errors {
+  email: string;
+  password: string;
+}
 
-    const handleChange = (e: any) => {
-        const {email, value} = e.target;
+export const useForm = (initialForm: any, validateForm: (form: any) => Errors) => {
+    const [form, setForm] = useState(initialForm);
+    const [errors, setErrors] = useState<Errors>({ email: "", password: "" });
 
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
         setForm({
             ...form,
-            [email]: value
+            [name]: value,
         });
     };
-   
-    const handleBlur = (e: any) => {
+
+    const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
         handleChange(e);
         setErrors(validateForm(form));
     };
 
-    const handleSubmit = (e: any) => {};
-
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setErrors(validateForm(form));
+        if (!Object.values(errors).some(error => error !== "")) {
+            // Submit form
+        }
+    };
 
     return {
-        form, 
-        errors, 
-        loading, 
-        response, 
-        handleBlur, 
-        handleChange, 
+        form,
+        errors,
+        handleBlur,
+        handleChange,
         handleSubmit,
     };
 };

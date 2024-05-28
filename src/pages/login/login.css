@@ -160,3 +160,23 @@
   padding: 77px 20px 347px 21px;
   box-sizing: border-box;
 }
+
+.error-email {
+  position: absolute;
+  top: 190px; /* Ajusta la distancia vertical según sea necesario */
+  left: 0; /* Ajusta la distancia horizontal según sea necesario */
+  color: red; /* Estilo para los mensajes de error */
+}
+
+
+.error-password {
+  position: absolute;
+  top: 280px; /* Ajusta la distancia vertical según sea necesario */
+  left: 0; /* Ajusta la distancia horizontal según sea necesario */
+  color: red; /* Estilo para los mensajes de error */
+}
+
+/* Establece la posición relativa para el contenedor de los campos de entrada */
+.input-wrapper {
+  position: relative;
+}
