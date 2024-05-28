@@ -2,18 +2,34 @@ import React, { useState, FormEvent } from "react";
 import "./login.css";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "./hooks/useForm";
+
 const initialForm = {
   email:"",
   password:"",
 };
-const validationsForm = (form) => {
-  let errors = {};
+
+
+export interface Errors {
+  email: string;
+  password: string;
+}
+
+const validationsForm = (form: any) => {
+  let errors: Errors = {
+    email: "",
+    password: ""
+  };
+
+  const regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
 
   if(!form.email.trim()){
-    errors.email = "El campo 'email' es requerido";
+    errors.email = "El campo 'Email' es obligatorio";
+  }else if(!regexEmail.test(form.email.trim())){
+    errors.email = "El campo 'Email' es incorrecto";
   }
+
   if(!form.password.trim()){
-    errors.password = "El campo 'email' es requerido";
+    errors.password = "El campo 'Contraseña' es obligatorio";
   }
 
   return errors;
@@ -60,9 +76,9 @@ export const LoginPage = () => {
               required
             /> 
             {errors.password && <p>{errors.password}</p>}
-            <input type="submit" className="ingresar-wrapper" id="btnLogin"> 
+            <button type="submit" className="ingresar-wrapper" id="btnLogin"> 
               <div className="ingresar">Ingresar</div>
-            </input> 
+            </button> 
 
             <button className="btnolvidocontra" id="contraseñaOlvido"> ¿Olvidaste tu contraseña? </button> 
 

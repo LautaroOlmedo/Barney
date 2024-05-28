@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-export const useForm = (initialForm, validateForm) => {
+export const useForm = (initialForm: any, validateForm: any) => {
     const [form,setForm] = useState(initialForm);
     const [errors,setErrors] = useState({});
     const [loading,setLoading] = useState(false);
     const [response,setResponse] = useState(null);
 
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         const {email, value} = e.target;
 
         setForm({
@@ -15,12 +15,12 @@ export const useForm = (initialForm, validateForm) => {
         });
     };
    
-    const handleBlur = (e) => {
+    const handleBlur = (e: any) => {
         handleChange(e);
         setErrors(validateForm(form));
     };
 
-    const handleSubmit = (e) => {};
+    const handleSubmit = (e: any) => {};
 
 
     return {
