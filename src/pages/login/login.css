@@ -1,6 +1,12 @@
+
 .frame-child,
 .ingresar {
   font-family: var(--font-poppins);
+}
+
+.frame-item,
+.frame-child {
+  color: black; /* Asegura que el color del texto sea negro */
 }
 
 /*Frame-child es el div donde se ingresa la contraseña*/
@@ -161,22 +167,3 @@
   box-sizing: border-box;
 }
 
-.error-email {
-  position: absolute;
-  top: 190px; /* Ajusta la distancia vertical según sea necesario */
-  left: 0; /* Ajusta la distancia horizontal según sea necesario */
-  color: red; /* Estilo para los mensajes de error */
-}
-
-
-.error-password {
-  position: absolute;
-  top: 280px; /* Ajusta la distancia vertical según sea necesario */
-  left: 0; /* Ajusta la distancia horizontal según sea necesario */
-  color: red; /* Estilo para los mensajes de error */
-}
-
-/* Establece la posición relativa para el contenedor de los campos de entrada */
-.input-wrapper {
-  position: relative;
-}

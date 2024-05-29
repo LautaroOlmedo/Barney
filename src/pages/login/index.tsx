@@ -1,96 +1,94 @@
 import React, { useState, FormEvent } from "react";
 import "./login.css";
-import { useNavigate } from "react-router-dom";
+import { useFormAction, useNavigate } from "react-router-dom";
 import { useForm } from "./hooks/useForm";
+import { data } from "../mocks/userMockData";
 
-const initialForm = {
-  email:"",
-  password:"",
-};
-
-
-export interface Errors {
-  email: string;
-  password: string;
-}
-
-const validationsForm = (form: any) => {
-  let errors: Errors = {
-    email: "",
-    password: ""
-  };
-
-  const regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
-
-  if(!form.email.trim()){
-    errors.email = "El campo 'Email' es obligatorio";
-  }else if(!regexEmail.test(form.email.trim())){
-    errors.email = "El campo 'Email' es incorrecto";
-  }
-
-  if(!form.password.trim()){
-    errors.password = "El campo 'Contraseña' es obligatorio";
-  }
-
-  return errors;
-};
 
 export const LoginPage = () => {
 
-  const {        
-        form, 
-        errors, 
-        // loading, 
-        // response, 
-        handleBlur, 
-        handleChange, 
-        handleSubmit,
-        } = useForm(initialForm, validationsForm);
+  const navigate = useNavigate();
+  const [error, setError] = useState<string | null>(null);
 
-        return (
-          <div>
-            <form onSubmit={handleSubmit}>
-              <div className="framelogin">
-                <section className="frame-wrapper">
-                  <div className="frame">
-                    <div className="input-wrapper">
-                      <input 
-                        className="frame-item" 
-                        id="emailImput" 
-                        type="email" 
-                        placeholder="Email" 
-                        onBlur={handleBlur} 
-                        onChange={handleChange} 
-                        value={form.email} 
-                        required
-                      />
-                      {errors.email && <p className="error error-email">{errors.email}</p>}
-                    </div>
-                    <div className="input-wrapper">
-                      <input 
-                        className="frame-child" 
-                        id="contraseñaInput" 
-                        type="password" 
-                        placeholder="Contraseña" 
-                        onBlur={handleBlur} 
-                        onChange={handleChange} 
-                        value={form.password} 
-                        required
-                      />
-                      {errors.password && <p className="error error-password">{errors.password}</p>}
-                    </div>
-                    <button type="submit" className="ingresar-wrapper" id="btnLogin"> 
-                      <div className="ingresar">Ingresar</div>
-                    </button> 
-                    <button className="btnolvidocontra" id="contraseñaOlvido"> ¿Olvidaste tu contraseña? </button> 
-                    <div className="frame1">
-                      <img className="tinder-1-icon" alt="" src="./img/barneyLogos/namePawBrown.png" />  
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </form>
-          </div>
-        );
-        
+  const {email, password, onInputChange, onResetForm} =
+    useForm({
+      email: "",
+      password: "",
+  });
+
+  const validateUser = (email: string, password: string) => {
+    return data.find(
+      user => user.emails === email && user.Password === password
+    );
+  };
+
+  const onLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Validación del correo y contraseña contra los datos almacenados
+    const user = validateUser(email, password);
+    if (!user) {
+      setError("Correo electrónico o contraseña incorrectos.");
+      return;
+    }
+    navigate("/home", {
+      replace: true,
+      state: {
+        logged: true,
+      }
+    })
+    onResetForm();
+    setError(null);
+
+  }
+
+  return (
+    <div>
+       <div className="framelogin">
+        <section className="frame-wrapper">
+          <form className="frame" onSubmit={onLogin}>
+            <input
+             name="email"
+             className="frame-item"
+             id="email"
+             type="email"
+             placeholder="Email"
+             value={email}
+             onChange={onInputChange}
+             required
+             autoComplete="off"
+            />
+            <input
+            className="frame-child"
+            name="password"
+            id="password"
+            type="password"
+            value={password}
+            onChange={onInputChange}
+            placeholder="Contraseña"
+            required
+            autoComplete="off"
+            />
+            <button type="submit" className="ingresar-wrapper" id="btnLogin">
+               <div className="ingresar">Ingresar</div>
+            </button>
+
+            {error && <div className="error-message">{error}</div>}
+
+            <button className="btnolvidocontra" id="contraseñaOlvido">
+            ¿Olvidaste tu contraseña?
+            </button>
+
+             <div className="frame1">
+               <img
+               className="tinder-1-icon"
+               alt=""
+               src="./img/barneyLogos/namePawBrown.png" />
+             </div>
+
+          </form>
+         </section>
+        </div>
+    </div>
+  );
+
 };
