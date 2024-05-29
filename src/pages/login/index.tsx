@@ -1,8 +1,9 @@
 import React, { useState, FormEvent } from "react";
 import "./login.css";
-import { useFormAction, useNavigate } from "react-router-dom";
+import { Link, useFormAction, useNavigate } from "react-router-dom";
 import { useForm } from "./hooks/useForm";
-import { data } from "../mocks/userMockData";
+import { data } from "../../mocks/userMockData";
+import { HomePage } from "../home/Home";
 
 
 export const LoginPage = () => {
@@ -10,11 +11,13 @@ export const LoginPage = () => {
   const navigate = useNavigate();
   const [error, setError] = useState<string | null>(null);
 
-  const {email, password, onInputChange, onResetForm} =
-    useForm({
-      email: "",
-      password: "",
+  const { formState, onInputChange, onResetForm } = useForm({
+    email: "",
+    password: "",
   });
+
+  const { email, password } = formState;
+
 
   const validateUser = (email: string, password: string) => {
     return data.find(
@@ -24,18 +27,15 @@ export const LoginPage = () => {
 
   const onLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    // Validación del correo y contraseña contra los datos almacenados
+    // Validación del correo y contraseña con los datos almacenados
     const user = validateUser(email, password);
     if (!user) {
       setError("Correo electrónico o contraseña incorrectos.");
       return;
     }
-    navigate("/home", {
-      replace: true,
-      state: {
-        logged: true,
-      }
-    })
+
+    navigate('/home', { state: { user, dog: user.dogs[0] } });
+
     onResetForm();
     setError(null);
 

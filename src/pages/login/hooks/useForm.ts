@@ -1,26 +1,29 @@
-import { useState } from "react";
+// hooks/useForm.ts
+import { useState } from 'react';
 
-export const useForm = (initialForm ={} ) => {
+interface FormState {
+  email: string;
+  password: string;
+}
 
-    const [formState, setFormState] = useState(initialForm);
+export const useForm = (initialState: FormState) => {
+  const [formState, setFormState] = useState(initialState);
 
-    const onInputChange = ({target}) => {
-        const { name, value } = target;
-        setFormState({
-            ...formState,
-            [name]: value,
-        });
-    };
+  const onInputChange = ({ target }: { target: any }) => {
+    const { name, value } = target;
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
 
-    const onResetForm = () =>{
-        setFormState(initialForm);
-    }
+  const onResetForm = () => {
+    setFormState(initialState);
+  };
 
-
-    return {
-        ...formState,
-        formState,
-        onInputChange,
-        onResetForm,
-    };
+  return {
+    formState,
+    onInputChange,
+    onResetForm,
+  };
 };
