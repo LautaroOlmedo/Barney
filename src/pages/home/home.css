@@ -476,4 +476,5 @@ body {
   width: 100%;
   position: relative;
   justify-content: center;
+  padding: 30px 0px 0px 0px;    /* para que no se tape con el NavBar*/
 }
