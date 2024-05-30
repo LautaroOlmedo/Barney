@@ -8,6 +8,6 @@ export type User = {
   emails: string;
   phones: string;
   type: string;
-  images: string[];
+  image: string;
   dogs: Dog[];
 };

@@ -4,10 +4,15 @@ import "./home.css";
 import { dogData } from "../../mocks/dogMockData";
 import { Dog } from "../../types/Dog";
 import { User } from "../../types/User";
+import { Matchs } from "../../components/Matchs/Matchs";
 
 export const HomePage: React.FC<{ user: User; dog: Dog }> = ({ user, dog }) => {
   return (
     <div className="card-container">
+      {/* <div>
+        <Matchs dog={dog} />
+      </div> */}
+
       <button className="previous-btn">{"<-"}</button>
 
       {dog.images.map((image, index) => (
