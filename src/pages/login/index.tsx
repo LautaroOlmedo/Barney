@@ -30,7 +30,7 @@ export const LoginPage = () => {
     // Validación del correo y contraseña con los datos almacenados
     const user = validateUser(email, password);
     if (!user) {
-      setError("Correo electrónico o contraseña incorrectos.");
+      setError("Email o Contraseña incorrectos.");
       return;
     }
 

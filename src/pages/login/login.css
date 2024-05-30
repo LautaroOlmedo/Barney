@@ -9,6 +9,8 @@
   color: black; /* Asegura que el color del texto sea negro */
 }
 
+
+
 /*Frame-child es el div donde se ingresa la contraseña*/
 .frame-child {
   border: 0;
@@ -152,12 +154,14 @@
   flex-direction: column;
 }
 .frame-wrapper {
+  flex-grow: 1; 
   align-self: stretch;
   align-items: center;
   justify-content: center;
 }
 .framelogin {
   width: 100%;
+  height: 100%;
   position: relative;
   background-color: #ffe6a7;
   overflow: hidden;
@@ -167,3 +171,13 @@
   box-sizing: border-box;
 }
 
+.error-message {
+  color: red;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  position: absolute;
+  top: 280px; /* Ajusta esta posición según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
