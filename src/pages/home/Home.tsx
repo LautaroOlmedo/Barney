@@ -5,7 +5,9 @@ import { dogData } from "../../mocks/dogMockData";
 import { Dog } from "../../types/Dog";
 import { User } from "../../types/User";
 
-export const HomePage: React.FC<{ dog: Dog }> = ({ dog }) => {
+export const HomePage: React.FC<{user: User, dog: Dog }> = ({user, dog }) => {
+  console.log(user);
+  
   return (
     <div className="frameinicio">
       <section className="frameinicio1" id="Inicio">
