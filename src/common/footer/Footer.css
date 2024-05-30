@@ -5,7 +5,7 @@ body{
     padding-bottom: 3em;
     min-height: 100vh;
 }   /* los cambios que se hagan en el body, afectan a todos los bodys. Este body es para que el footer no tape info y este siempre abajo. */
-    
+
 .footer{
     background:#743a3a;
     padding:10px 0px;
