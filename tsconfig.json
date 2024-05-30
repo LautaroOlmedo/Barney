@@ -5,7 +5,6 @@
     "outDir": "./dist",
     "esModuleInterop": true,
     "skipLibCheck": true,
-<<<<<<< HEAD
     "allowJs": true,
     "checkJs": false,
     "noEmit": false,
@@ -22,26 +21,6 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "ignoreDeprecations": "5.0"
-=======
-    "allowJs": true, // Permitir archivos JavaScript
-    "checkJs": false, // No verificar archivos JavaScript
-    "noEmit": false, // Emitir archivos de salida
-    "noImplicitAny": false, // Permitir cualquier tipo implícito
-    "strictNullChecks": false, // Desactivar verificación estricta de null y undefined
-    "strictFunctionTypes": false, // Desactivar verificación estricta de tipos de función
-    "strictBindCallApply": false, // Desactivar verificación estricta de bind, call y apply
-    "strictPropertyInitialization": false, // Desactivar inicialización estricta de propiedades
-    "noImplicitThis": false, // Permitir uso implícito de 'this'
-    "alwaysStrict": false, // No imponer 'use strict'
-    "noImplicitReturns": false, // Permitir funciones sin valor de retorno implícito
-    "noUnusedParameters": false, // No lanzar errores por parámetros no utilizados
-    //"noImplicitUnusedLocals": false, // No lanzar errores por variables locales no utilizadas
-    "noFallthroughCasesInSwitch": false, // Permitir fallthrough en switch
-    "allowSyntheticDefaultImports": true, // Permitir importaciones por defecto sintéticas
-    "resolveJsonModule": true // Permitir importación de archivos JSON
-    //"noStrictGenericChecks": true, // Desactivar verificación estricta de genéricos
-    //"suppressImplicitAnyIndexErrors": true // Suprimir errores de índice implícito 'any'
->>>>>>> origin/Lautaro
   },
   "include": ["src/**/*.ts", "src/**/*.js"],
   "exclude": ["node_modules", "__tests__", "utils"]
