@@ -13,14 +13,14 @@ export let data: User[] = [
     emails: "john@example.com",
     phones: "123-456-789",
     type: "admin",
-    image: "./img/userProfileImg/userPhoto.jpg",
+    images: ["./img/userProfileImg/userPhoto.jpg"],
     dogs: [
       {
         ID: "10",
         Name: "Cuco",
         Age: 5,
         Description: "Buldog Frances",
-        images: ["/img/dogProfileImg/perfilCuco.jpeg"],
+        images: ["./img/userProfileImg/userPhoto.jpg"],
         matches: [],
         likes: [],
       },
@@ -39,7 +39,7 @@ export let data: User[] = [
     emails: "dbeckham@example.com",
     phones: "231-564-978",
     type: "admin",
-    image: "./img/userProfileImg/userPhoto.jpg",
+    images: ["./img/userProfileImg/userPhoto.jpg"],
     dogs: [
       {
         ID: "11",

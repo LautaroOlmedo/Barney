@@ -8,19 +8,14 @@ import { UserProfilePage } from "./pages/UserProfile/userProfile";
 import { DogProfileSelect } from "./pages/DogProfileSelect/DogProfileSelect";
 import { data } from "./mocks/userMockData";
 import { dogData } from "./mocks/dogMockData";
-import { LoginError } from "./pages/login/errors/loginError";
 import { DogProfilePage } from "./pages/dogProfile/DogProfile";
 
 export const AppRouter: React.FC<{}> = () => {
   return (
     <Routes>
       <Route path="/" element={<RouterLayout />}>
-        <Route path="/home" element={<HomePage dog={dogData[1]} />} />
+        <Route path="/home" element={<HomePage user={data[0]} dog={dogData[1]} />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route
-          path="/login/errors"
-          element={<LoginError error="Usuario o contraseña incorrectos" />}
-        />
         <Route
           path="/userProfile"
           element={<UserProfilePage user={data[0]} />}
@@ -33,7 +28,7 @@ export const AppRouter: React.FC<{}> = () => {
           path="/dogProfileSelect"
           element={<DogProfileSelect dog={dogData[0]} />}
         />
-        // si la ruta no tiene que tener navBar o footer va por acá bajo
+        //si la ruta no tiene que tener navBar o footer va por acá bajo
       </Route>
     </Routes>
   );

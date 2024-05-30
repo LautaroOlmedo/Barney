@@ -1,6 +1,6 @@
-import { Like } from "./Like";
+// import { Like } from "./Like";
 import { Match } from "./Match";
-import { User } from "./User";
+// import { User } from "./User";
 
 export type Dog = {
   ID: string;
