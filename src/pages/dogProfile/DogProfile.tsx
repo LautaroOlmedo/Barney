@@ -10,8 +10,8 @@ export const DogProfilePage: React.FC<{ dog: Dog; user: User }> = ({
 }) => {
   return (
     <div>
-      <div className="titulo">
-        <h1>PERFIL</h1>
+      <div className="tittle">
+        <h1>{dog.Name}</h1>
       </div>
       <div className="container">
         <div className="perfil">
