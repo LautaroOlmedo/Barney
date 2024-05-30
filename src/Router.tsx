@@ -33,7 +33,7 @@ export const AppRouter: React.FC<{}> = () => {
           path="/dogProfileSelect"
           element={<DogProfileSelect dog={dogData[0]} />}
         />
-        // si la ruta no tiene que tener navBar o footer va por acá bajo
+        //si la ruta no tiene que tener navBar o footer va por acá bajo
       </Route>
     </Routes>
   );
