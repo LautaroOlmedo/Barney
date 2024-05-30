@@ -9,4 +9,5 @@ export type User = {
   phones: string;
   type: string;
   image: string;
+  dogs: Dog[];
 };

@@ -1,6 +1,6 @@
 import { Dog } from "../types/Dog";
-import { User } from "../types/User";
-import { Person } from "../types/Person";
+// import { User } from "../types/User";
+// import { Person } from "../types/Person";
 
 export let dogData: Dog[] = [
   {
