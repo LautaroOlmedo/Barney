@@ -27,7 +27,6 @@ body {
   padding: 20px;
   height: calc(60vh - 6px);
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 .perfil {
@@ -79,7 +78,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  flex-grow: 1;
+
   padding: 30px;
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -106,5 +105,8 @@ body {
 
   .btn {
     padding: 8px;
+  }
+  .container {
+    flex-wrap: wrap;
   }
 }
