@@ -1,9 +1,19 @@
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { User } from "../../types/User";
 import { UserCard } from "../../components/Carts/User/UserCard/UserCard";
+import { data } from "../../mocks/userMockData";
 import "./userProfile.css";
 
-export const UserProfilePage: React.FC<{ user: User }> = ({ user }) => {
+export const UserProfilePage: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const user = (location.state?.user as User) || data[0]; // Asignar data[0] si location.state.user es null o undefined
+
+  const handleUpdateProfile = () => {
+    navigate("/updateProfile", { state: { user } });
+  };
+
   return (
     <div>
       <div className="titulo">
@@ -21,7 +31,9 @@ export const UserProfilePage: React.FC<{ user: User }> = ({ user }) => {
           <div className="userCard">
             <UserCard user={user} />
           </div>
-          <button className="btn">Actualizar información</button>
+          <button className="btn" onClick={handleUpdateProfile}>
+            <h3>Actualizar información</h3>
+          </button>
         </div>
         <div className="imgPerro">
           <img className="img" src={user.image} alt="img" />
