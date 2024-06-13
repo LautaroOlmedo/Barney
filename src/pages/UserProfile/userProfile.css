@@ -58,7 +58,7 @@ body {
   box-shadow: 0 4px 15px #73648a inset;
   border-radius: 15px;
   background-color: white;
-  border: 5px solid purple;
+  border: 5px solid #803D3B;
   box-sizing: border-box;
   transition: background-color 0.3s ease;
   margin-bottom: 50px;
