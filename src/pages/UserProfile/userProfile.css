@@ -7,17 +7,16 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+
   background-color: #f5f5f5;
 }
 .titulo {
   width: 100%;
   height: 50px;
-  background-color: #DEB887;
+  background-color: #deb887;
   color: white;
   display: flex;
   align-items: center;
-  padding: 0px 20px 0px 75px;
 }
 
 .container {
@@ -35,6 +34,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin-right: 20px;
+  margin-bottom: 20px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -43,20 +43,17 @@ body {
 
 .userCard {
   width: 100%;
-  padding: 20px;
+  padding: 5px;
   background-color: #fafafa;
 
   margin-bottom: 20px;
 }
 
 .btn {
-  /* 
   padding: 10px;
-  background-color: #4caf50;
-  color: white;
   border: none;
   cursor: pointer;
-  text-align: var(userCard); */
+  text-align: var(userCard);
   width: 350px;
   box-shadow: 0 4px 15px #73648a inset;
   border-radius: 15px;
@@ -64,17 +61,14 @@ body {
   border: 5px solid purple;
   box-sizing: border-box;
   transition: background-color 0.3s ease;
+  margin-bottom: 50px;
 
   height: 50.7px;
   cursor: pointer;
 }
 
-.actualizar-btn:hover {
-  background-color: #45a049;
-}
-
 .imgPerro {
-  display: flex;
+  display: flexbox;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -83,6 +77,13 @@ body {
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
 
 .img {
@@ -92,6 +93,14 @@ body {
 
   height: 400px;
   object-fit: contain;
+}
+
+.frameinfoperro-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  bottom: 0;
 }
 
 @media (max-width: 380px) {
@@ -110,3 +119,109 @@ body {
     flex-wrap: wrap;
   }
 }
+
+/* .tinder-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 262px;
+  height: 73px;
+  object-fit: cover;
+}
+.nombre {
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+.aos,
+.nombre {
+  position: relative;
+  font-weight: 800;
+  text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
+}
+.descripcion {
+  overflow: hidden;
+  flex-direction: row;
+  gap: var(--gap-7xs);
+}
+.descripcion,
+.frameinfoperro,
+.frameinfoperro-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameinfoperro {
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+}
+.frameinfoperro-wrapper {
+  position: absolute;
+  top: 210px;
+  left: 720px;
+  border-radius: var(--br-xl);
+  width: 393px;
+  flex-direction: row;
+  padding: var(--padding-457xl) var(--padding-8xl) var(--padding-xl);
+  box-sizing: border-box;
+  background-image: url(./public/frame-107@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color1);
+  width: 440px;
+  height: 78px;
+}
+.perfil {
+  position: absolute;
+  top: 15px;
+  left: 65px;
+  font-weight: 800;
+}
+.basilcaret-down-solid-icon {
+  position: absolute;
+  top: 0;
+  left: -7px;
+  width: 40px;
+  height: 40.1px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.btnvolverhome {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 19px;
+  left: 13px;
+  width: 33px;
+  height: 39.9px;
+  overflow: hidden;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  width: 440px;
+  height: 78px;
+  color: var(--black);
+  font-family: var(--font-es-peak-trial);
+}
+.desktop-8 {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-16xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+} */

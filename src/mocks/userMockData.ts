@@ -10,8 +10,8 @@ export let data: User[] = [
     },
     Username: "johndoe",
     Password: "password123",
-    emails: "john@example.com",
-    phones: "123-456-789",
+    emails: ["john@example.com"],
+    phones: ["123-456-789"],
     type: "admin",
     image: "./img/userProfileImg/userPhoto.jpg",
     dogs: [
@@ -20,7 +20,7 @@ export let data: User[] = [
         Name: "Cuco",
         Age: 5,
         Description: "Buldog Frances",
-        images: ["/img/dogProfileImg/perfilCuco.jpeg"],
+        images: ["./img/userProfileImg/userPhoto.jpg"],
         matches: [],
         likes: [],
       },
@@ -36,8 +36,8 @@ export let data: User[] = [
     },
     Username: "dbeckham",
     Password: "alamadrid",
-    emails: "dbeckham@example.com",
-    phones: "231-564-978",
+    emails: ["dbeckham@example.com"],
+    phones: ["231-564-978"],
     type: "admin",
     image: "./img/userProfileImg/userPhoto.jpg",
     dogs: [
@@ -53,3 +53,13 @@ export let data: User[] = [
     ],
   },
 ];
+
+export const updateUser = (updatedUser: User) => {
+  const index = data.findIndex(
+    (user) => user.Person.ID === updatedUser.Person.ID
+  );
+  if (index !== -1) {
+    data[index] = updatedUser;
+    console.log("Data updated in userMockData: ", data[index]);
+  }
+};
