@@ -17,6 +17,7 @@ body {
   color: white;
   display: flex;
   align-items: center;
+  padding: 60px 20px 25px 70px;
 }
 
 .container {

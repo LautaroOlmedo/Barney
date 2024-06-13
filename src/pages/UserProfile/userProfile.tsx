@@ -18,13 +18,6 @@ export const UserProfilePage: React.FC = () => {
     <div>
       <div className="titulo">
         <h1>PERFIL</h1>
-        <button className="btnvolverhome" id="btnMensajes">
-          <img
-            className="imgBoton"
-            alt=""
-            src="../public/img/appLogos/logoFlechaIzq.png"
-          />
-        </button>
       </div>
       <div className="container">
         <div className="perfil">

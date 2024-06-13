@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-
 import { HomePage } from "./pages/home/Home";
 import { LoginPage } from "./pages/login";
 import { RouterLayout } from "./common/routerLayout/RouterLayout";
@@ -10,6 +9,7 @@ import { UserUpdatePage } from "./pages/UserProfile/userUpdatePage";
 import { data } from "./mocks/userMockData";
 import { dogData } from "./mocks/dogMockData";
 import { DogProfilePage } from "./pages/dogProfile/DogProfile";
+import { DogUpdatePage } from "./pages/dogProfile/dogUpdatePage";
 
 export const AppRouter: React.FC<{}> = () => {
   return (
@@ -21,16 +21,13 @@ export const AppRouter: React.FC<{}> = () => {
         />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/userProfile" element={<UserProfilePage />} />
-        <Route
-          path="/dogProfile"
-          element={<DogProfilePage dog={dogData[0]} user={data[0]} />}
-        />
+        <Route path="/dogProfile" element={<DogProfilePage />} />
         <Route
           path="/dogProfileSelect"
           element={<DogProfileSelect dog={dogData[0]} />}
         />
         <Route path="/updateProfile" element={<UserUpdatePage />} />
-        //si la ruta no tiene que tener navBar o footer va por acá bajo
+        <Route path="/updateDogProfile" element={<DogUpdatePage />} />
       </Route>
     </Routes>
   );
