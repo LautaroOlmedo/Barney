@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     background-color: #ffe6a7; /* Color de fondo de toda la página */
-    overflow-x: hidden;
+    overflow: auto;
 }
 
 .firstName {

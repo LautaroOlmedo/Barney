@@ -9,6 +9,7 @@ export const RegisterPage = () => {
         // Redirigir al login cuando se haga clic en registrar
         navigate("/login");
     };
+    
     return (
       <div>
         <div className="frameregister">
