@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import"./register.css";
 
 export const RegisterPage = () => {
+    const navigate = useNavigate(); // Usar useNavigate para la navegación
 
+    const handleRegister = () => {
+        // Redirigir al login cuando se haga clic en registrar
+        navigate("/login");
+    };
     return (
       <div>
         <div className="frameregister">
@@ -87,8 +93,8 @@ export const RegisterPage = () => {
                 autoComplete="off"
               />
               
-              <button type="submit" className="btnRegister" id="btnRegister">
-                 <div className="ingresar">Registrar</div>
+              <button type="submit" className="btnRegister" id="btnRegister" onClick={handleRegister}>
+                 <div className="ingresar">Registrarse</div>
               </button>
 
 
