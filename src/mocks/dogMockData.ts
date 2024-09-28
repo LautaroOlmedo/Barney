@@ -52,3 +52,11 @@ export let dogData: Dog[] = [
     // },
   },
 ];
+
+export const updateDog = (updatedDog: Dog) => {
+  const index = dogData.findIndex((dog) => dog.ID === updatedDog.ID);
+  if (index !== -1) {
+    dogData[index] = updatedDog;
+    console.log("Data updated in userMockData: ", dogData[index]);
+  }
+};
