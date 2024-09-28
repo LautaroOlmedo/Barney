@@ -10,6 +10,7 @@ import { data } from "./mocks/userMockData";
 import { dogData } from "./mocks/dogMockData";
 import { DogProfilePage } from "./pages/dogProfile/DogProfile";
 import { DogUpdatePage } from "./pages/dogProfile/dogUpdatePage";
+import { RegisterPage } from "./pages/register/Register";
 
 export const AppRouter: React.FC<{}> = () => {
   return (
@@ -20,6 +21,7 @@ export const AppRouter: React.FC<{}> = () => {
           element={<HomePage user={data[0]} dog={dogData[1]} />}
         />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="/userProfile" element={<UserProfilePage />} />
         <Route path="/dogProfile" element={<DogProfilePage />} />
         <Route

@@ -1,3 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffe6a7; /* Color de fondo de toda la página */
+}
+
 
 .frame-child,
 .ingresar {
@@ -45,10 +52,10 @@
 }
 /*Boton de ingresar*/
 .ingresar-wrapper {
+  background-color: #a38cc7;
   cursor: pointer;
-  border: 1px solid #432818;
+  border: none;
   padding: 0 103px;
-  background-color: var(--color-8);
   position: absolute;
   top: 331px;
   left: 21px;
@@ -62,29 +69,28 @@
   justify-content: center;
 }
 .ingresar-wrapper:hover {
-  background-color: #a38cc7;
-  cursor: pointer;
+  background-color: #45a049;
 }
 
 /*Boton de olvidaste contraña*/
-.btnolvidocontra {
+.btnregister {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 404px;
-  left: 85px;
-  font-size: var(--font-size-base);
+  top: 400px;
+  left: 125px;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 500;
   font-family: var(--font-es-peak-trial);
-  color: var(--black);
+  color: purple;
   text-align: left;
   display: inline-block;
   opacity: 0.65;
 }
-.btnolvidocontra:hover {
+.btnregister:hover {
   cursor: pointer;
 }
 
@@ -154,7 +160,6 @@
   flex-direction: column;
 }
 .frame-wrapper {
-  flex-grow: 1; 
   align-self: stretch;
   align-items: center;
   justify-content: center;
@@ -162,6 +167,7 @@
 .framelogin {
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   position: relative;
   background-color: #ffe6a7;
   overflow: hidden;
