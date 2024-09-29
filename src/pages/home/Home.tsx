@@ -8,28 +8,46 @@ import { Matchs } from "../../components/Matchs/Matchs";
 
 export const HomePage: React.FC<{ user: User; dog: Dog }> = ({ user, dog }) => {
   return (
-    <div className="card-container">
-      <button className="previous-btn">{"<-"}</button>
+    <div className="dog-profile-container">
+      <div className="gallery-container">
+        <div className="matches-section">
+          {dog.images.map((image, index) => (
+            <div key={index} className="match-image">
+              <img src={image} alt={`${dog.Name} match ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+      </div>
 
-      {dog.images.map((image, index) => (
-        <div key={index}>
-          <h1>{dog.Name}</h1>
-          <div className="card">
-            <img src={image} alt={`Dog ${index + 1}`} />
+      <div className="main-content">
+        <div className="main-image-section">
+          {/* Main image of the dog */}
+          <img src={dog.images[0]} alt={dog.Name} className="main-image" />
+
+          {/* Dog info (name and age) */}
+          <div className="dog-info">
+            <h2>
+              {dog.Name}, {dog.Age}
+            </h2>
           </div>
         </div>
-      ))}
-      <button className="next-btn">{"->"}</button>
-      <div className="button-container">
-        <button className="like-btn">
-          <img src={"/img/appLogos/ghosted.png"} alt="Like" />
-        </button>
-        <button className="superlike-btn">
-          <img src={"/img/appLogos/superGuau.png"} alt="Superlike" />
-        </button>
-        <button className="dislike-btn">
-          <img src={"/img/appLogos/guau.png"} alt="Dislike" />
-        </button>
+
+        <div className="button-container">
+          {/* Dislike button */}
+          <button className="dislike-btn">
+            <img src="/img/appLogos/ghosted.png" alt="Dislike" />
+          </button>
+
+          {/* Super-like button */}
+          <button className="superlike-btn">
+            <img src="/img/appLogos/superGuau.png" alt="Super-like" />
+          </button>
+
+          {/* Like button */}
+          <button className="like-btn">
+            <img src="/img/appLogos/guau.png" alt="Like" />
+          </button>
+        </div>
       </div>
     </div>
   );
