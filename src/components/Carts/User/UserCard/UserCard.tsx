@@ -1,3 +1,4 @@
+import React from "react";
 import { User } from "../../../../types/User";
 import "./UserCard.css";
 export const UserCard: React.FC<{ user: User }> = ({ user }) => {

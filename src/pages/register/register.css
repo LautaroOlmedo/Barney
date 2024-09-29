@@ -1,0 +1,104 @@
+html, body { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #ffe6a7; /* Color de fondo de toda la página */
+    overflow: auto;
+}
+
+.firstName {
+    margin-top: -50px; /* Ajusta el valor según sea necesario */
+}
+
+.firstName,
+.lastName,
+.dni,
+.birthDate,
+.email,
+.confirmEmail,
+.password,
+.confirmPassword {
+    color: black;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-base);
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+    background-color: lightblue;
+    border-radius: 20px;
+    width: 352px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.logo {
+    margin-left: 150px; /* Aumenta este valor para mover más a la derecha */
+    margin-top: -30px; /* Aumenta este valor para mover más abajo */
+    object-fit: cover;
+    width: 520px;
+    height: 270px;
+}
+
+.registerCamp {
+    width: 400px; /* Ancho del formulario */
+    min-height: 400px;
+    display: flex; /* Hacer el contenedor de los campos un flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    align-items: center; /* Centrar elementos horizontalmente */
+    justify-content: flex-start; /* Espacio entre los campos */
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    margin-top: -20px;
+}
+
+.registerwrapper {
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+}
+
+.frameregister {
+    width: 100%;
+    min-height: 100vh; /* Altura mínima de la página */
+    position: relative;
+    background-color: #ffe6a7;
+    overflow: hidden;
+    display: flex; /* Flexbox para centrar verticalmente */
+    flex-direction: column; /* Colocar elementos en columna */
+    justify-content: flex-start; /* Centrar contenido verticalmente */
+    padding: 240px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+    margin-top: -70px;
+}
+
+.btnRegister {
+    background-color: #a38cc7;
+    cursor: pointer;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-base);
+    border: none;
+    border-radius: 20px;
+    width: 352px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Espaciado entre los campos y el botón */
+    cursor: pointer;
+}
+
+.btnRegister:hover {
+    background-color: #45a049; /* Color al pasar el mouse */
+}
+
+.framelogo {
+    margin-left: -20px;;
+    top: -36px;
+}
