@@ -20,7 +20,7 @@ export let data: User[] = [
         Name: "Cuco",
         Age: 5,
         Description: "Buldog Frances",
-        images: ["/img/dogProfileImg/perfilCuco.jpeg"],
+        images: ["./img/userProfileImg/userPhoto.jpg"],
         matches: [],
         likes: [],
       },

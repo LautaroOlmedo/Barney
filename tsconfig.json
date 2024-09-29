@@ -16,13 +16,13 @@
     "noImplicitThis": false, // Permitir uso implícito de 'this'
     "alwaysStrict": false, // No imponer 'use strict'
     "noImplicitReturns": false, // Permitir funciones sin valor de retorno implícito
-    "noImplicitUnusedParameters": false, // No lanzar errores por parámetros no utilizados
-    "noImplicitUnusedLocals": false, // No lanzar errores por variables locales no utilizadas
+    "noUnusedParameters": false, // No lanzar errores por parámetros no utilizados
+    //"noImplicitUnusedLocals": false, // No lanzar errores por variables locales no utilizadas
     "noFallthroughCasesInSwitch": false, // Permitir fallthrough en switch
     "allowSyntheticDefaultImports": true, // Permitir importaciones por defecto sintéticas
-    "resolveJsonModule": true, // Permitir importación de archivos JSON
-    "noStrictGenericChecks": true, // Desactivar verificación estricta de genéricos
-    "suppressImplicitAnyIndexErrors": true // Suprimir errores de índice implícito 'any'
+    "resolveJsonModule": true // Permitir importación de archivos JSON
+    //"noStrictGenericChecks": true, // Desactivar verificación estricta de genéricos
+    //"suppressImplicitAnyIndexErrors": true // Suprimir errores de índice implícito 'any'
   },
   "include": ["src/**/*.ts", "src/**/*.js"],
   "exclude": ["node_modules", "__tests__", "utils"]
