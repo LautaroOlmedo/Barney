@@ -5,48 +5,12 @@
   background-color: #f5f5f5;
 }
 
-.gallery-container {
-  display: flex;
-  justify-content: flex-start; /* Alinea a la izquierda */
-  padding: 20px;
-}
-
+/* Matchs section aligned to the left */
 .matches-section {
-  display: grid;
-  grid-template-columns: repeat(2, 150px); /* 2 columnas de 150px cada una */
-  gap: 10px; /* Espacio entre imágenes */
-}
-
-.match-image {
-  width: 150px; /* Ancho fijo */
-  height: 150px; /* Altura fija */
-  border-radius: 10px; /* Bordes redondeados */
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
-}
-
-.match-image img {
-  width: 100%;
-  height: 100%; /* Llenar el contenedor */
-  object-fit: cover; /* Mantener la relación de aspecto */
-}
-
-.match-image img {
-  width: 100%;
-  height: 100%; /* Make the image fill the container */
-  object-fit: cover; /* Maintain aspect ratio */
-}
-
-.match-image {
-  border-radius: 10px; /* Rounded corners */
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
-}
-
-.match-image img {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the area */
+  display: flex;
+  justify-content: flex-start;
+  width: 30%; /* El tamaño de la sección de coincidencias */
+  padding: 20px;
 }
 
 /* Main content aligned to the center */
@@ -55,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%; /* El contenido principal ocupa un 50% del ancho */
+  width: 70%; /* El contenido principal ocupa el 70% */
 }
 
 /* Main image section */
