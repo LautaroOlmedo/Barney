@@ -37,7 +37,10 @@ export const NavBar: React.FC<{}> = ({}) => {
               Cambiar Perro
             </Link>
           </div>
-          <div>
+          <div className="navbar-buttons">
+            <button className="premium-button">
+              Premium
+            </button>
             <button className="navbar-button">
               Cerrar Sesion
             </button>
