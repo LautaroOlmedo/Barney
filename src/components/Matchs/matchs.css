@@ -1,66 +1,35 @@
-/* Main grid container for images */
+/* Estilo para las imágenes en Matchs */
 .matches-grid {
+  margin-top: 100px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-gap: 20px; /* Space between match items */
-  justify-items: center; /* Align images in the center */
-  margin: 20px auto; /* Center the grid container on the page */
-  padding: 10px;
-  max-width: 500px; /* Optional: Limit the container width */
+  grid-template-columns: repeat(2, 150px); /* 2 columnas de 150px cada una */
+  gap: 10px; /* Espacio entre imágenes */
+  justify-content: start; /* Alinea las imágenes al inicio (izquierda) */
 }
 
-/* Each match image container */
 .match-image {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; /* Circular images */
+  width: 150px;
+  height: 150px;
+  position: relative; /* Posición relativa para el nombre */
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
-/* Image styling to make it circular */
 .match-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
 }
 
-/* Hover effect for images */
-.match-image:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-}
-
-.match-image:hover img {
-  transform: scale(1.1); /* Zoom the image slightly on hover */
-}
-
-/* Dog name below the image */
-.dog-name {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #333;
-  text-align: center;
-  font-weight: bold;
-}
-
-/* Optional: For responsiveness */
-@media (max-width: 500px) {
-  .matches-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
-    grid-gap: 10px;
-    gap: 10px;
-  }
-
-  .match-image {
-    width: 80px;
-    height: 80px;
-  }
+/* Estilo del nombre similar al de Home */
+.dog-info {
+  position: absolute;
+  bottom: 5px; /* Posiciona el texto cerca del borde inferior */
+  left: 5px; /* Un poco de margen a la izquierda */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  color: white; /* Color del texto en blanco */
+  padding: 2px 5px; /* Un poco de espacio interno */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 12px; /* Tamaño de fuente más pequeño que en el componente Home */
 }
