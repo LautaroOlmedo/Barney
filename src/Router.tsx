@@ -18,7 +18,7 @@ export const AppRouter: React.FC<{}> = () => {
       <Route path="/" element={<RouterLayout />}>
         <Route
           path="/home"
-          element={<HomePage user={data[0]} dog={dogData[1]} />}
+          element={<HomePage user={data[0]} dog={dogData[0]} />}
         />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
