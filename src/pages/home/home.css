@@ -36,7 +36,7 @@
   border-radius: 15px; /* Bordes redondeados de 15px */
   overflow: hidden; /* Esconde cualquier contenido que se salga del contenedor */
   box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Sombra para dar efecto de profundidad */
-  margin-top: -305px; /* Ajusta este valor según necesites; usa un valor negativo para subir la sección */
+  margin-top: -308px; /* Ajusta este valor según necesites; usa un valor negativo para subir la sección */
 }
 
 /* Main image */
