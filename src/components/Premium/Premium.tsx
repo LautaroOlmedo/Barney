@@ -1,10 +1,11 @@
 import React from "react";
+import "./Premium.css";
 
-const EmergentFooter = ({ onClose }) => {
+const Premium = ({ onClose }) => {
     return (
       <div className="premiumOverlay">
         <div className="premiumContent">
-            <h2>Información de servicios</h2>
+            <h1>Información de servicios</h1>
             <p><strong>Servicios cuenta Base:</strong>.</p>
             <p>- Permite ver otros perfiles de usuarios con la disponibilidad de poder dar “Guau” (like) o Miau (dislike) a otros perfiles.
             - Se le permite al usuario redactar una corta descripción sobre el perruno y otra descripción sobre el mismo. En esta descripción es donde se colocará obligadamente la edad y la raza del perro. Esta descripción va a ser visible para otros usuarios.  
@@ -15,21 +16,12 @@ const EmergentFooter = ({ onClose }) => {
             </p>
             <p><strong>Servicios cuenta PREMIUM:</strong>.</p>
             <p>
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            El servicio premium además de contar con todas las disponibilidades del servicio base también contará con:
+            - Se habilita una opción llamada “Super Guau” (super like) esta opción permitirá dar Super Guau a otros perfiles. El beneficio de dar un Super Guau es que tu perfil aparecerá primero en el inicio del otro usuario.
+            - En vez de poder crear como máximo 3 perfiles se van a poder crear hasta 7 perfiles para otras mascotas.
+            - Va a permitir ver los perfiles de los usuarios que te dieron Guau o Super Guau, sin necesidad de que te aparezcan aleatoriamente en el inicio y sin la necesidad de realizar Match.
+            - Permitirá buscar con ciertos filtros otros perfiles, mediante un buscador dentro de la aplicación, por ejemplo: En caso de estar buscando un perro macho de raza Salchicha, se va a poder filtrar mediante el buscador y van a aparecer todos los perfiles registrados en la aplicación de perros macho raza salchicha, estos perfiles se van a ordenar de manera de lejanía, es decir, el perfil que aparezca primero en la lista va a ser el perfil más cercano a tu ubicación actual.
             </p>
-            <p> <strong>Privicy Policy:</strong>.</p>
-            <p> 
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            </p>
-            <p><strong>Terms & Conditions: </strong>.</p>
-            <p>
-                "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            </p>
-
           {/* <button onClick={}>Mercado Pago</button> */}
           <button onClick={onClose}>Cerrar</button>
         </div>
@@ -37,4 +29,4 @@ const EmergentFooter = ({ onClose }) => {
     );
   };
   
-  export default EmergentFooter;
+  export default Premium;
