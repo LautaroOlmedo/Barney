@@ -56,6 +56,7 @@
   .matches-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
     grid-gap: 10px;
+    gap: 10px;
   }
 
   .match-image {

@@ -1,7 +1,5 @@
 import React from "react";
 import "./home.css";
-// --------------
-import { dogData } from "../../mocks/dogMockData";
 import { Dog } from "../../types/Dog";
 import { User } from "../../types/User";
 import { Matchs } from "../../components/Matchs/Matchs";
@@ -9,16 +7,12 @@ import { Matchs } from "../../components/Matchs/Matchs";
 export const HomePage: React.FC<{ user: User; dog: Dog }> = ({ user, dog }) => {
   return (
     <div className="dog-profile-container">
-      <div className="gallery-container">
-        <div className="matches-section">
-          {dog.images.map((image, index) => (
-            <div key={index} className="match-image">
-              <img src={image} alt={`${dog.Name} match ${index + 1}`} />
-            </div>
-          ))}
-        </div>
+      {/* Renderizamos el componente Matchs a la izquierda */}
+      <div className="matches-section">
+        <Matchs dog={user.dogs[0]} />
       </div>
 
+      {/* Contenido principal en el centro */}
       <div className="main-content">
         <div className="main-image-section">
           {/* Main image of the dog */}
