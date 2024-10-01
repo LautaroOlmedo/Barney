@@ -6,10 +6,12 @@ export const Matchs: React.FC<{ dog: Dog }> = ({ dog }) => {
   return (
     <div className="matches-grid">
       {dog.images.map((image, imgIndex) => (
-        <div key={imgIndex} className="match-image">
+        <div key={`${dog.ID}-${imgIndex}`} className="match-image">
           <img src={image} alt={`${dog.Name} ${imgIndex + 1}`} />
-          <p className="dog-name">{dog.Name}</p>{" "}
-          {/* Nombre debajo de la imagen */}
+          <div className="dog-info">
+            <p>{dog.Name}</p>{" "}
+            {/* Nombre debajo de la imagen con el mismo estilo que en Home */}
+          </div>
         </div>
       ))}
     </div>
