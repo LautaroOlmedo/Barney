@@ -82,10 +82,15 @@ body{
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-
-.navbar-button:hover, .premium-button:hover {
+.premium-button:hover {
+  background-color: black; /* Fondo negro al pasar el cursor */
+  color: red; /* Texto dorado al pasar el cursor */
+}
+.navbar-button:hover {
   background-color: #e2f1f8;
   color: black;
+}
+.navbar-button:hover, .premium-button:hover {
   transform: scale(1.1);
 }
 
