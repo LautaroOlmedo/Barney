@@ -25,10 +25,7 @@ export const AppRouter: React.FC<{}> = () => {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/userProfile" element={<UserProfilePage />} />
         <Route path="/dogProfile" element={<DogProfilePage />} />
-        {/* <Route
-          path="/dogProfileSelect"
-          element={<DogProfileSelect dog={dogData[0]} />}
-        /> */}
+        <Route path="/dogProfileSelect" element={<DogProfileSelect/>} />
         <Route path="/matchs" element={<Matchs dog={data[0].dogs[0]} />} />
         <Route path="/updateProfile" element={<UserUpdatePage />} />
         <Route path="/updateDogProfile" element={<DogUpdatePage />} />
