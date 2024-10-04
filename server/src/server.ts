@@ -5,6 +5,7 @@ import http from "http";
 
 // ---------- ---------- ---------- ---------- ----------
 import { userRouter } from "./infraestructure/user-router";
+import { productRouter } from "./infraestructure/product-router";
 export class ServerBootstrap {
   constructor() {
     this.server.use(express.json());
@@ -12,6 +13,7 @@ export class ServerBootstrap {
     this.server.use(morgan("dev"));
     this.server.use(cors());
     this.server.use("/user", userRouter);
+    this.server.use("/product", productRouter);
 
     this.start();
   }
