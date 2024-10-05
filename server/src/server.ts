@@ -1,8 +1,15 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
+<<<<<<< HEAD
 import { userRouter } from "./infraestructure/user-router";
 
+=======
+import http from "http";
+
+// ---------- ---------- ---------- ---------- ----------
+import { userRouter } from "./infraestructure/user-router";
+>>>>>>> 4f073ad29eb11f7aa2ce6830e6bddb5638aa8188
 export class ServerBootstrap {
   constructor() {
     this.server.use(express.json());
@@ -22,4 +29,8 @@ export class ServerBootstrap {
 
   private server: express.Application = express();
   private port = 8000;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4f073ad29eb11f7aa2ce6830e6bddb5638aa8188
