@@ -33,6 +33,11 @@ export const NavBar: React.FC<{}> = ({}) => {
             </Link>
           </div>
           <div>
+            <Link to={"/dogProfileSelect"} className="navbar-link">
+              Cambiar Perro
+            </Link>
+          </div>
+          <div>
             <button className="navbar-button">
               Cerrar Sesion
             </button>

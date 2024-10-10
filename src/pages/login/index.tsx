@@ -21,7 +21,7 @@ export const LoginPage = () => {
 
   const validateUser = (email: string, password: string) => {
     return data.find(
-      user => user.emails === email && user.Password === password
+      user => user.emails[0] === email && user.Password === password
     );
   };
 
