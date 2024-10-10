@@ -33,8 +33,8 @@ export const UserProfilePage: React.FC = () => {
           <div className="frameinfoperro-wrapper">
             <div className="frameinfoperro">
               <div className="descripcion">
-                <h1 className="nombre">Barni,</h1>
-                <div className="años">3</div>
+                <h1 className="nombre">{user.Username},</h1>
+                <div className="años">{user.Person.age}</div>
               </div>
             </div>
           </div>

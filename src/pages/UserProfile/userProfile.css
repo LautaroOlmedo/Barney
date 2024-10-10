@@ -59,7 +59,7 @@ body {
   box-shadow: 0 4px 15px #73648a inset;
   border-radius: 15px;
   background-color: white;
-  border: 5px solid #803D3B;
+  border: 5px solid #803d3b;
   box-sizing: border-box;
   transition: background-color 0.3s ease;
   margin-bottom: 50px;
@@ -82,7 +82,7 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
-  position: relative;
+  position: center;
   display: inline-block;
   text-align: center;
 }
