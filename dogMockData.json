@@ -16,7 +16,12 @@
     },
     "Age": 5,
     "Name": "Buddy",
-    "Description": "A friendly golden retriever."
+    "Description": "A friendly golden retriever.",
+    "images": [
+      "/img/dogProfileImg/perfilCuco.jpeg",
+      "/img/dogProfileImg/border-collie.jfif",
+      "/img/dogProfileImg/golden-retriever.jpeg"
+    ]
   },
   {
     "ID": "2",
@@ -35,6 +40,11 @@
     },
     "Age": 3,
     "Name": "Max",
-    "Description": "A playful Labrador."
+    "Description": "A playful Labrador.",
+    "images": [
+      "/img/dogProfileImg/perfilCuco.jpeg",
+      "/img/dogProfileImg/border-collie.jfif",
+      "/img/dogProfileImg/golden-retriever.jpeg"
+    ]
   }
 ]
