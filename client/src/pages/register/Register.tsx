@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import  useForm  from "./hooks/useForms";
+
 import"./register.css";
 
 export const RegisterPage = () => {
     const navigate = useNavigate(); // Usar useNavigate para la navegación
     
-    const { formData, errors, setErrors, handleChange, validateForm } = useForm();
+    const {formData, errors, setErrors, handleChange, validateForm} = useForm();
 
     const handleRegister = (e: React.FormEvent) => {
       e.preventDefault();

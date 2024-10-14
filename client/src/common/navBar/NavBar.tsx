@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css"
-import Premium from "../../components/Premium/Premium";
+//import Premium from "../../components/Premium/Premium";
 // import { Dog } from "../../types/Dog";
 
 export const NavBar: React.FC<{}> = ({}) => {
@@ -58,7 +58,7 @@ export const NavBar: React.FC<{}> = ({}) => {
             </button>
           </div>
       </div>  
-      {isPremiumOpen && <Premium onClose={closePremium} />}
+      {/* {isPremiumOpen && <Premium onClose={closePremium} />} */}
     </nav>
   );
 };
