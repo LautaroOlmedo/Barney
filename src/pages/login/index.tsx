@@ -21,7 +21,7 @@ export const LoginPage = () => {
 
   const validateUser = (email: string, password: string) => {
     return data.find(
-      user => user.emails === email && user.Password === password
+      user => user.emails[0] === email && user.Password === password
     );
   };
 
@@ -30,7 +30,7 @@ export const LoginPage = () => {
     // Validación del correo y contraseña con los datos almacenados
     const user = validateUser(email, password);
     if (!user) {
-      setError("Correo electrónico o contraseña incorrectos.");
+      setError("Email o Contraseña incorrectos.");
       return;
     }
 
@@ -40,6 +40,11 @@ export const LoginPage = () => {
     setError(null);
 
   }
+  
+  const onRegister = () => {
+    // Redirige a la página de registro
+    navigate('/register');
+  };
 
   return (
     <div>
@@ -74,8 +79,8 @@ export const LoginPage = () => {
 
             {error && <div className="error-message">{error}</div>}
 
-            <button className="btnolvidocontra" id="contraseñaOlvido">
-            ¿Olvidaste tu contraseña?
+            <button className="btnregister" id="Registrarse" onClick={onRegister}>
+              Registrarse
             </button>
 
              <div className="frame1">
