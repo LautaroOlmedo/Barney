@@ -15,7 +15,7 @@ html, body {
 .dni,
 .birthDate,
 .email,
-.confirmEmail,
+.phoneNumber,
 .password,
 .confirmPassword {
     color: black;

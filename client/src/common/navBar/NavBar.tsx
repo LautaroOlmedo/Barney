@@ -1,9 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css"
+import Premium from "../../components/Premium/Premium";
 // import { Dog } from "../../types/Dog";
 
 export const NavBar: React.FC<{}> = ({}) => {
+
+  const [isPremiumOpen, setPremiumOpen] = useState(false); // Estado para controlar la ventana emergente
+
+  const openPremium = () => {
+    setPremiumOpen(true); // Mostrar la ventana emergente
+  };
+
+  const closePremium = () => {
+    setPremiumOpen(false); // Cerrar la ventana emergente
+  };
+
   return (
     <nav >
       <input id="menu__toggle" type="checkbox" />
@@ -37,13 +49,16 @@ export const NavBar: React.FC<{}> = ({}) => {
               Cambiar Perro
             </Link>
           </div>
-          <div>
+          <div className="navbar-buttons">
+            <button className="premium-button" onClick={openPremium}>
+              Premium
+            </button>
             <button className="navbar-button">
               Cerrar Sesion
             </button>
           </div>
       </div>  
-
+      {isPremiumOpen && <Premium onClose={closePremium} />}
     </nav>
   );
 };

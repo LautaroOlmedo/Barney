@@ -182,7 +182,7 @@ html, body {
   font-size: var(--font-size-base);
   font-weight: 500;
   position: absolute;
-  top: 280px; /* Ajusta esta posición según sea necesario */
+  top: 260px; /* Ajusta esta posición según sea necesario */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
