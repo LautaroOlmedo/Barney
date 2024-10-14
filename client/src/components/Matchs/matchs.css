@@ -1,0 +1,35 @@
+/* Estilo para las imágenes en Matchs */
+.matches-grid {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 150px); /* 2 columnas de 150px cada una */
+  gap: 10px; /* Espacio entre imágenes */
+  justify-content: start; /* Alinea las imágenes al inicio (izquierda) */
+}
+
+.match-image {
+  width: 150px;
+  height: 150px;
+  position: relative; /* Posición relativa para el nombre */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.match-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilo del nombre similar al de Home */
+.dog-info {
+  position: absolute;
+  bottom: 5px; /* Posiciona el texto cerca del borde inferior */
+  left: 5px; /* Un poco de margen a la izquierda */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  color: white; /* Color del texto en blanco */
+  padding: 2px 5px; /* Un poco de espacio interno */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 12px; /* Tamaño de fuente más pequeño que en el componente Home */
+}
