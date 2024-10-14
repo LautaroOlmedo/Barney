@@ -30,8 +30,4 @@ export class ServerBootstrap {
 
   private server: express.Application = express();
   private port = 8000;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4f073ad29eb11f7aa2ce6830e6bddb5638aa8188
