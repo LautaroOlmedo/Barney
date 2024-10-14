@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css"
-import EmergentFooter from "../../components/EmergentFooter/EmergentFooter"; 
+import EmergentFooter from "../../components/EmergentFooter/emergentFooter"; 
 
 
 export const Footer = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import  useForm  from "./hooks/useForm";
+import  useForm  from "./hooks/useForms";
 import"./register.css";
 
 export const RegisterPage = () => {
