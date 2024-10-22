@@ -20,7 +20,7 @@ export const DogProfileSelect: React.FC = () => {
 return(
     <div className="chooseDog">
         <div className="main-div">
-            <h1>Elija un perro</h1>
+            <h1>Seleccione un perfil</h1>
             <div className="profilesDiv">
                 {dogs?.map((dog, index) => (
                     <Link key={index} to={"/home"}>
