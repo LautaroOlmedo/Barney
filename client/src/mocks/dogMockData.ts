@@ -5,7 +5,7 @@ import { Dog } from "../types/Dog";
 export let dogData: Dog[] = [
   {
     ID: "1",
-    Name: "Cuco",
+    Name: "Changuito Zeballos",
     Age: 5,
     Description: "Buldog Frances",
     images: ["/img/dogProfileImg/perfilCuco.jpeg"],
