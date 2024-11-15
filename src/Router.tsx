@@ -12,6 +12,7 @@ import { DogProfilePage } from "./pages/dogProfile/DogProfile";
 import { DogUpdatePage } from "./pages/dogProfile/dogUpdatePage";
 import { RegisterPage } from "./pages/register/Register";
 import { Matchs } from "./components/Matchs/Matchs";
+import { MessagesPage } from "./pages/messages/MensajesPage";
 
 export const AppRouter: React.FC<{}> = () => {
   return (
@@ -29,6 +30,7 @@ export const AppRouter: React.FC<{}> = () => {
         <Route path="/matchs" element={<Matchs dog={data[0].dogs[0]} />} />
         <Route path="/updateProfile" element={<UserUpdatePage />} />
         <Route path="/updateDogProfile" element={<DogUpdatePage />} />
+        <Route path="/messages" element={<MessagesPage />} />
       </Route>
     </Routes>
   );

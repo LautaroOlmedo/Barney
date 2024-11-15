@@ -1,123 +1,171 @@
-* {
+/* Estilos generales */
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-body {
-  display: flex;
-  flex-direction: column;
-
-  background-color: #f5f5f5;
-}
-.titulo {
-  width: 100%;
-  height: 50px;
-  background-color: #deb887;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 60px 20px 25px 70px;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  height: calc(60vh - 6px);
-  align-items: flex-start;
-}
-
-.perfil {
-  display: flex;
-
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.userCard {
-  width: 100%;
-  padding: 5px;
-  background-color: #fafafa;
-
-  margin-bottom: 20px;
-}
-
-.btn {
+.titulo-user-profile {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: #ffe6a7; /* Color crema o beige */
   padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 60px; /* Ajustar según la altura del navbar */
+}
+
+.container-user-profile {
+  display: flex;
+  justify-content: space-between; /* Dejar igual espacio a ambos lados */
+  align-items: center; /* Asegura que los elementos estén centrados verticalmente */
+  padding: 20px; /* Agregar un padding general */
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+.perfil-user-profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userCard-user-profile {
+  width: 100%;
+  margin-bottom: 10px; /* Reducir margen inferior */
+}
+
+.btn-user-profile {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
   border: none;
   cursor: pointer;
-  text-align: var(userCard);
-  width: 350px;
-  box-shadow: 0 4px 15px #73648a inset;
-  border-radius: 15px;
-  background-color: white;
-  border: 5px solid #803d3b;
-  box-sizing: border-box;
-  transition: background-color 0.3s ease;
-  margin-bottom: 50px;
-
-  height: 50.7px;
-  cursor: pointer;
-}
-
-.imgPerro {
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-
-  padding: 30px;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  position: center;
-  display: inline-block;
+  border-radius: 5px;
   text-align: center;
 }
 
-.img {
+.imgPerro-user-profile {
+  flex: 2;
   display: flex;
-  border-radius: 15px;
+  justify-content: flex-start;
+  align-items: center; /* Asegura que la imagen esté alineada con la UserCard */
+  position: relative;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 350px; /* Incrementar ligeramente el tamaño */
+  height: 550px; /* Mantener proporción */
+  overflow: hidden; /* Para que el overlay no salga de los límites */
+  margin-left: auto; /* Asegura que se alinee con el espacio */
+  margin-right: auto; /* Espacio equilibrado a ambos lados */
+}
+
+.img-user-profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative; /* Necesario para la superposición del overlay */
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+/* Overlay para el nombre y la edad */
+.overlay-user-profile {
+  position: absolute;
+  bottom: 0; /* Alinear con la parte inferior de la imagen */
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.7)
+  ); /* Degradado más pequeño */
+  display: flex;
   align-items: center;
-
-  height: 400px;
-  object-fit: contain;
+  justify-content: flex-start; /* Mantener todo alineado a la izquierda */
+  box-sizing: border-box;
 }
 
-.frameinfoperro-wrapper {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  position: absolute;
-  bottom: 0;
+.userCard-user-profile {
+  width: 300px; /* Tamaño fijo */
+  flex-shrink: 0; /* Evita que se reduzca con el tamaño de pantalla */
 }
 
-@media (max-width: 380px) {
-  .perfil {
+/* Estilo del nombre y la edad juntos */
+.nombre-user-profile,
+.años-user-profile {
+  color: white;
+  font-size: 1.3rem;
+  margin: 0; /* Eliminar márgenes para evitar desalineación */
+  padding-right: 5px; /* Espacio entre nombre y edad */
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  .container-user-profile {
+    flex-direction: row;
+  }
+
+  .perfil-user-profile {
+    flex: 1;
+    max-width: 30%;
+  }
+
+  .imgPerro-user-profile {
+    flex: 2;
+    max-width: 70%;
     padding: 10px;
   }
 
-  .userCard {
-    padding: 10px;
+  .img-user-profile {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .container-user-profile {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .btn {
-    padding: 8px;
+  .imgPerro-user-profile {
+    max-width: 100%;
+    margin-top: 20px;
   }
-  .container {
-    flex-wrap: wrap;
+
+  .userCard-user-profile {
+    margin-bottom: 20px; /* Separar del perfil cuando la pantalla es pequeña */
+  }
+
+  .img-wrapper {
+    width: 300px; /* Tamaño más pequeño en pantallas pequeñas */
+    height: 450px;
+    margin: 0 auto; /* Centrar en pantallas pequeñas */
+  }
+
+  .img-user-profile {
+    width: 80%;
+  }
+
+  .btn-user-profile {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .overlay-user-profile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Asegurar que el overlay se mantenga dentro de la imagen */
   }
 }
 
