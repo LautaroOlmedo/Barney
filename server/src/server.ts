@@ -1,11 +1,11 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import http from "http";
 
 // ---------- ---------- ---------- ---------- ----------
 import { userRouter } from "./infraestructure/user-router";
 import { productRouter } from "./infraestructure/product-router";
+
 export class ServerBootstrap {
   // ---> Clase inicia. Si la instancias y llamas al metodo start se inicia el servidor.
   constructor() {
