@@ -15,8 +15,6 @@ body {
   transition: background-color 0.3s; /* Transición suave para el color de fondo */
 }
 
-
-
 .footer {
   background: #743a3a;
   padding: 5px 0px;
@@ -25,6 +23,16 @@ body {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+.footer button {
+  background-color: #743a3a; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  padding: 8px 12px; /* Reducir el padding del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
 }
 
 .footer .content a {
@@ -44,4 +52,20 @@ body {
 .footer .content ul li {
   display: inline-block;
   margin: 0px 30px;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    padding: 8px 0; /* Reducir aún más el padding en pantallas pequeñas */
+    font-size: 0.9rem; /* Reducir el tamaño de fuente del footer */
+  }
+
+  .footer .content ul li {
+    margin: 0px 10px; /* Reducir el margen entre enlaces */
+  }
+
+  .footer button {
+    padding: 6px 10px; /* Reducir el padding del botón aún más */
+    font-size: 0.85rem; /* Ajustar el tamaño de fuente del botón */
+  }
 }

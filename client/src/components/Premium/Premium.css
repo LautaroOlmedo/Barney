@@ -1,0 +1,59 @@
+premiumOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  width: 100vw; /* Asegúrate de que ocupe todo el ancho de la ventana */
+  height: 100vh; /* Asegúrate de que ocupe toda la altura de la ventana */
+}
+
+.premiumContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%; /* Ajusta el ancho de la pantalla emergente */
+  max-width: 700px; /* Establece un ancho máximo */
+}
+
+.premiumContent button {
+  background: white;
+  display: block; /* Los botones ahora ocupan toda la fila */
+  width: 25%; /* Ajusta el ancho del botón */
+  margin: 20px auto; /* Centra los botones */
+  text-align: center;
+  cursor: pointer;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+.adquirirPremium {
+  background-color: white;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.adquirirPremium:hover {
+  color: gold;
+  background-color: black; /* Color al pasar el mouse */
+}
+
+.cerrar {
+  padding: 6px;
+}
+
+.cerrar:hover {
+  color: white;
+  background-color: red;
+}
+
+button {
+  margin-top: 10px;
+}

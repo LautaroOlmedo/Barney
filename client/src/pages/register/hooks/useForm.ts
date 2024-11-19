@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 interface FormData {
   firstName: string;
@@ -13,14 +13,14 @@ interface FormData {
 
 const useForm = () => {
   const [formData, setFormData] = useState<FormData>({
-    firstName: '',
-    lastName: '',
-    dni: '',
-    birthDate: '',
-    email: '',
-    phoneNumber: '',
-    password: '',
-    confirmPassword: '',
+    firstName: "",
+    lastName: "",
+    dni: "",
+    birthDate: "",
+    email: "",
+    phoneNumber: "",
+    password: "",
+    confirmPassword: "",
   });
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
@@ -28,14 +28,23 @@ const useForm = () => {
   const validateForm = (): { [key: string]: string } => {
     const validationErrors: { [key: string]: string } = {};
     // Validar si todos los campos están completos
-    if (!formData.firstName) validationErrors.firstName = "El campo 'Nombre' es obligatorio.";
-    if (!formData.lastName) validationErrors.lastName = "El campo 'Apellido' es obligatorio.";
+    if (!formData.firstName)
+      validationErrors.firstName = "El campo 'Nombre' es obligatorio.";
+    if (!formData.lastName)
+      validationErrors.lastName = "El campo 'Apellido' es obligatorio.";
     if (!formData.dni) validationErrors.dni = "El campo 'DNI' es obligatorio.";
-    if (!formData.birthDate) validationErrors.birthDate = "El campo 'Fecha de Nacimiento' es obligatorio."; 
-    if (!formData.email) validationErrors.email = "El campo 'Email' es obligatorio.";
-    if (!formData.phoneNumber) validationErrors.phoneNumber = "El campo 'Teléfono' es obligatorio.";
-    if (!formData.password) validationErrors.password = "El campo 'Contraseña' es obligatorio.";
-    if (!formData.confirmPassword) validationErrors.confirmPassword = "El campo 'Confirmar Contraseña' es obligatorio.";
+    if (!formData.birthDate)
+      validationErrors.birthDate =
+        "El campo 'Fecha de Nacimiento' es obligatorio.";
+    if (!formData.email)
+      validationErrors.email = "El campo 'Email' es obligatorio.";
+    if (!formData.phoneNumber)
+      validationErrors.phoneNumber = "El campo 'Teléfono' es obligatorio.";
+    if (!formData.password)
+      validationErrors.password = "El campo 'Contraseña' es obligatorio.";
+    if (!formData.confirmPassword)
+      validationErrors.confirmPassword =
+        "El campo 'Confirmar Contraseña' es obligatorio.";
 
     // Validar nombre
     if (!/^[A-Za-z]+$/.test(formData.firstName)) {
@@ -49,7 +58,8 @@ const useForm = () => {
 
     // Validar DNI
     if (!/^\d+$/.test(formData.dni)) {
-      validationErrors.dni = "El DNI debe contener solo números sin espacios ni puntos.";
+      validationErrors.dni =
+        "El DNI debe contener solo números sin espacios ni puntos.";
     }
 
     // Validar email
@@ -59,7 +69,8 @@ const useForm = () => {
 
     // Validar teléfono
     if (!/^\d+$/.test(formData.phoneNumber)) {
-      validationErrors.phoneNumber = "El número de teléfono debe contener solo números.";
+      validationErrors.phoneNumber =
+        "El número de teléfono debe contener solo números.";
     }
 
     // Validar que las contraseñas coincidan

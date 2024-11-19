@@ -16,26 +16,24 @@ export const UserProfilePage: React.FC = () => {
 
   return (
     <div>
-      <div className="titulo">
-        <h1>PERFIL</h1>
+      <div className="titulo-user-profile">
+        <h1>Perfil</h1>
       </div>
-      <div className="container">
-        <div className="perfil">
-          <div className="userCard">
+      <div className="container-user-profile">
+        <div className="perfil-user-profile">
+          <div className="userCard-user-profile">
             <UserCard user={user} />
           </div>
-          <button className="btn" onClick={handleUpdateProfile}>
+          <button className="btn-user-profile" onClick={handleUpdateProfile}>
             <h3>Actualizar información</h3>
           </button>
         </div>
-        <div className="imgPerro">
-          <img className="img" src={user.image} alt="img" />
-          <div className="frameinfoperro-wrapper">
-            <div className="frameinfoperro">
-              <div className="descripcion">
-                <h1 className="nombre">Barni,</h1>
-                <div className="años">3</div>
-              </div>
+        <div className="imgPerro-user-profile">
+          <div className="img-wrapper">
+            <img className="img-user-profile" src={user.image} alt="img" />
+            <div className="overlay-user-profile">
+              <h1 className="nombre-user-profile">{user.Username},</h1>
+              <span className="años-user-profile">{user.Person.age}</span>
             </div>
           </div>
         </div>

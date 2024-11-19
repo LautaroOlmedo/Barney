@@ -1,123 +1,184 @@
-* {
+/* Estilos generales */
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body {
-  display: flex;
-  flex-direction: column;
 
-  background-color: #f5f5f5;
+.titulo-user-profile {
+  text-align: left; /* Alinear el texto a la izquierda */
+  margin-bottom: 0; /* Eliminar el margen inferior */
+  background-color: #743a3a; /* Color crema o beige */
+  padding: 2px 10px; /* Reducir padding superior e inferior a 2px */
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 70px; /* Reducir el valor de 'top' */
+  bottom: 5px;
+  z-index: 1000;
 }
-.titulo {
-  width: 100%;
-  height: 50px;
-  background-color: #deb887;
+.titulo-user-profile h1 {
+  margin: 0; /* Eliminar margen superior e inferior del h1 */
+  text-align: left; /* Alinear el texto a la izquierda */
+  font-size: 1.5rem; /* Tamaño de fuente ajustado */
   color: white;
-  display: flex;
-  align-items: center;
-  padding: 60px 20px 25px 70px;
 }
 
-.container {
+.container-user-profile {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  height: calc(60vh - 6px);
-  align-items: flex-start;
+  align-items: center;
+  padding: 15px; /* Reducir el padding general */
+  box-sizing: border-box;
+  margin-bottom: 60px; /* Reducir espacio inferior */
+  padding-top: 8px;
 }
 
-.perfil {
+.perfil-user-profile {
+  flex: 1;
   display: flex;
-
   flex-direction: column;
-  align-items: flex-start;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 
-.userCard {
+.userCard-user-profile {
   width: 100%;
-  padding: 5px;
-  background-color: #fafafa;
-
-  margin-bottom: 20px;
+  margin-bottom: 8px; /* Reducir margen inferior */
 }
 
-.btn {
-  padding: 10px;
+.btn-user-profile {
+  padding: 8px 15px; /* Reducir padding del botón */
+  background-color: #007bff;
+  color: white;
   border: none;
   cursor: pointer;
-  text-align: var(userCard);
-  width: 350px;
-  box-shadow: 0 4px 15px #73648a inset;
-  border-radius: 15px;
-  background-color: white;
-  border: 5px solid #803D3B;
-  box-sizing: border-box;
-  transition: background-color 0.3s ease;
-  margin-bottom: 50px;
-
-  height: 50.7px;
-  cursor: pointer;
-}
-
-.imgPerro {
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-
-  padding: 30px;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  position: relative;
-  display: inline-block;
+  border-radius: 5px;
   text-align: center;
 }
 
-.img {
+.imgPerro-user-profile {
+  flex: 2;
   display: flex;
-  border-radius: 15px;
+  justify-content: flex-start;
   align-items: center;
-
-  height: 400px;
-  object-fit: contain;
+  position: relative;
 }
 
-.frameinfoperro-wrapper {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.img-wrapper {
+  padding-top: 50px;
+  position: relative;
+  width: 350px;
+  height: 530px;
+  max-width: 350px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.img-user-profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px; /* Redondear tanto superior como inferior */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+/* Overlay para el nombre y la edad */
+.overlay-user-profile {
   position: absolute;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
 }
 
-@media (max-width: 380px) {
-  .perfil {
+.nombre-user-profile,
+.años-user-profile {
+  color: white;
+  font-size: 1.1rem; /* Reducir tamaño de fuente */
+  margin: 0;
+  padding-right: 4px;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  .container-user-profile {
+    flex-direction: row;
+  }
+
+  .perfil-user-profile {
+    flex: 1;
+    max-width: 30%;
+  }
+
+  .imgPerro-user-profile {
+    flex: 2;
+    max-width: 70%;
     padding: 10px;
   }
 
-  .userCard {
-    padding: 10px;
+  .img-user-profile {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .container-user-profile {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
   }
 
-  .btn {
-    padding: 8px;
+  .imgPerro-user-profile {
+    max-width: 100%;
+    margin-top: 20px;
   }
-  .container {
-    flex-wrap: wrap;
+
+  .userCard-user-profile {
+    margin-bottom: 20px; /* Separar del perfil cuando la pantalla es pequeña */
+  }
+
+  .img-wrapper {
+    width: 100%; /* Asegurar que ocupe el 100% del contenedor en pantallas pequeñas */
+    max-width: 300px; /* Mantener un tamaño máximo */
+    height: auto; /* Ajuste automático de la altura */
+    margin: 0 auto; /* Centrar en pantallas pequeñas */
+    border-radius: 10px; /* Mantener el redondeo */
+  }
+
+  .img-user-profile {
+    width: 100%; /* Asegurar que la imagen se ajuste al ancho del contenedor */
+    height: auto; /* Ajuste automático de la altura */
+    border-radius: 10px; /* Mantener esquinas redondeadas */
+    object-fit: cover;
+  }
+
+  .overlay-user-profile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Asegurar que el overlay se mantenga dentro del contenedor */
+    height: auto; /* Ajustar automáticamente la altura */
+    padding: 5px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    border-radius: 0 0 10px 10px; /* Redondear solo las esquinas inferiores */
+    box-sizing: border-box;
+    overflow: hidden; /* Mantener contenido dentro de los bordes */
+  }
+  .perfil-user-profile {
+    width: 300px;
   }
 }
 
