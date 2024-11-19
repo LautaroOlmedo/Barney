@@ -30,6 +30,12 @@ return(
                         </button>
                     </Link>
                  ))}
+                    
+                        <button className="btnCreateProfile">
+                            <img src="./img/crearPerfilImg/crearPerfil.png" alt='Crear Perfil' />
+                            <span> Crear perfil </span>
+                        </button>
+                    
             </div>
         </div>
     </div>
