@@ -8,10 +8,14 @@
   padding-bottom: 20px; /* Espacio adicional para el footer */
   margin-top: 60px; /* Ajusta esto para dejar espacio para el navbar */
 }
+.left-column-mensajes,
+.right-column-mensajes {
+  background-color: #ffe6a7; /* Este es el color clarito que has estado usando */
+}
 
 .left-column-mensajes {
   width: 25%;
-  background-color: #f4f4f4;
+  background-color: #ffe6a7;
   padding: 10px;
   overflow-y: auto;
   flex: 1;
@@ -26,11 +30,11 @@
 }
 
 .match-item:hover {
-  background-color: #e6e6e6;
+  background-color: #ffe6a7;
 }
 
 .match-item.active {
-  background-color: #d9d9d9;
+  background-color: #ffe6a7;
 }
 
 .match-image {
@@ -82,20 +86,33 @@
   flex-grow: 1; /* Ocupa todo el espacio disponible */
   overflow-y: auto;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-message {
   margin: 5px 0;
+  padding: 10px;
+  border-radius: 15px; /* Bordes redondeados */
+  max-width: 75%; /* Tamaño máximo para que no se desborden */
+  background-color: #ffe6a7; /* Fondo claro */
+  color: black; /* Color de texto negro */
+  display: inline-block;
+  position: relative;
+  word-wrap: break-word;
 }
 
+/* Estilo para el mensaje enviado por el usuario */
 .my-message {
-  text-align: right;
-  color: blue;
+  background-color: #ffe6a7; /* Color claro para los mensajes del usuario */
+  border-radius: 15px 15px 0 15px; /* Solo el borde superior e izquierdo con bordes redondeados */
+  align-self: flex-end; /* Alinea el mensaje a la derecha */
 }
 
 .other-message {
-  text-align: left;
-  color: green;
+  background-color: #ffe6a7; /* Color más oscuro para los mensajes recibidos */
+  border-radius: 15px 15px 15px 0; /* Solo el borde superior y derecho con bordes redondeados */
+  align-self: flex-start; /* Alinea el mensaje a la izquierda */
 }
 
 .chat-input-section {
@@ -114,16 +131,20 @@
 .send-button {
   border: none; /* Sin bordes */
   border-radius: 20px; /* Hacer el botón más redondo */
-  background-color: violet; /* Color del botón */
-  color: white; /* Color del texto */
+  background-color: #5b3a3a; /* Color marrón oscuro */
+  color: white; /* Color blanco para el texto */
   padding: 10px 20px; /* Espaciado interno */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.2s ease-in-out;
+}
+.send-button:hover {
+  background-color: #743a3a; /* Color más claro para el hover */
 }
 
 /* Columna derecha - Info del usuario */
 .right-column-mensajes {
   width: 25%;
-  background-color: #f4f4f4;
+  background-color: #ffe6a7;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -133,15 +154,21 @@
 }
 
 .image-container {
-  position: relative; /* Necesario para que los elementos dentro se posicionen correctamente */
+  /* Necesario para que los elementos dentro se posicionen correctamente */
   display: inline-block;
-  width: 70%; /* Ajusta el tamaño según tus necesidades */
+
+  width: 250px;
+  height: 460px;
+  overflow: hidden;
+  position: relative;
 }
 
 .user-image {
   width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-  height: auto;
+  height: 100%;
   border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Degradado en la parte inferior de la imagen */
@@ -160,7 +187,7 @@
 .overlay-username {
   position: absolute;
   bottom: 10px; /* Ajusta la posición del texto */
-  left: 50%;
+  left: 30px;
   transform: translateX(-50%);
   color: white;
   font-size: 1.2rem;
@@ -174,6 +201,44 @@
 .user-info-section p {
   color: #666;
 }
+
+/* Contenedor de la mascota */
+.pet-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%; /* Ocupa el 30% del ancho del contenedor principal */
+  height: 40%; /* Asegura que también ocupe el 30% en altura */
+  border-radius: 15px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que la imagen de la mascota no se desborde */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+/* Imagen de la mascota */
+.pet-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsión */
+}
+
+/* Nombre de la mascota sobre la imagen */
+.overlay-petname {
+  position: absolute;
+  bottom: 5px; /* Ajusta la posición desde abajo */
+  left: 0px; /* Ajusta la posición desde la izquierda */
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semitransparente para visibilidad */
+  padding: 3px 8px;
+  border-radius: 10px;
+  z-index: 2; /* Asegúrate de que el nombre esté encima de la imagen */
+}
+
 @media (max-width: 900px) {
   .left-column-mensajes,
   .right-column-mensajes {

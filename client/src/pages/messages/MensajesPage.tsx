@@ -24,7 +24,7 @@ export const MessagesPage: React.FC = () => {
               className="match-image"
             />
             <div className="match-info">
-              <h3>{user.Username}</h3> {/* Eliminado user.Person.age */}
+              <h3>{user.Username}</h3>
               <p>{user.lastMessage}</p>
               <small>{user.lastMessageTime}</small>
             </div>
@@ -37,7 +37,6 @@ export const MessagesPage: React.FC = () => {
         {selectedUser ? (
           <div className="chat-section">
             <div className="chat-history">
-              {/* Historial de mensajes con el usuario seleccionado */}
               {selectedUser.chatHistory.map((message, index) => (
                 <div
                   key={index}
@@ -64,18 +63,28 @@ export const MessagesPage: React.FC = () => {
       </div>
 
       {/* Información del usuario a la derecha */}
-
       <div className="right-column-mensajes">
         {selectedUser && (
           <div className="user-info-section">
             <div className="image-container">
+              {/* Imagen del usuario seleccionada */}
               <img
-                src={selectedUser.image}
-                alt={selectedUser.Username}
+                src={selectedUser.imageDog}
+                alt={selectedUser.nameDog}
                 className="user-image"
               />
               <div className="overlay"></div>
-              <h3 className="overlay-username">{selectedUser.Username}</h3>
+              <h3 className="overlay-username">{selectedUser.nameDog}</h3>
+
+              {/* Información de la mascota */}
+              <div className="pet-container">
+                <img
+                  src={selectedUser.image}
+                  alt={selectedUser.Username}
+                  className="pet-image"
+                />
+                <h4 className="overlay-petname">{selectedUser.Username}</h4>
+              </div>
             </div>
           </div>
         )}

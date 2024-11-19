@@ -9,4 +9,6 @@ export type Match = {
     sender: string; // Quién envió el mensaje
     text: string; // Contenido del mensaje
   }[];
+  nameDog: string;
+  imageDog: string;
 };

@@ -19,20 +19,26 @@ export const DogProfilePage: React.FC = () => {
 
   return (
     <div>
-      <div className="tittle">
-        <h1>{dog.Name}</h1>
+      <div className="titulo-dog-profile">
+        <h1>Perfil</h1>
       </div>
-      <div className="container">
-        <div className="perfil">
-          <div className="dogCard">
+      <div className="container-dog-profile">
+        <div className="perfil-dog-profile">
+          <div className="dogCard-dog-profile">
             <DogCart dog={dog} user={user} />
           </div>
-          <button className="btn" onClick={handleUpdateDogProfile}>
+          <button className="btn-dog-profile" onClick={handleUpdateDogProfile}>
             <h3>Actualizar información</h3>
           </button>
         </div>
-        <div className="imgPerro">
-          <img className="img" src={dog.images[0]} alt="img"></img>
+        <div className="imgPerro-dog-profile">
+          <div className="img-wrapper">
+            <img className="img-dog-profile" src={dog.images[0]} alt="img" />
+            <div className="overlay-dog-profile">
+              <h1 className="nombre-dog-profile">{dog.Name},</h1>
+              <span className="años-dog-profile">{dog.Age}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
