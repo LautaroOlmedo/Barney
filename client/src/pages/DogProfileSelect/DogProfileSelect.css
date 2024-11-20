@@ -1,0 +1,145 @@
+.chooseDog{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #ffe6a7;
+}
+
+.main-div{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-div h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5.8rem;
+  letter-spacing: 0.2rem;
+  color: #322C2B;
+}
+
+.profilesDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profilesDiv .btnProfile{
+  height: 10vw;
+  min-height: 8.4rem;
+  max-height: 20rem;
+  width: 10vw;
+  min-width: 8.4px;
+  max-width: 20rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-top: 3rem;
+  margin-right: 2.5rem;
+  position: relative;
+  cursor: pointer;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.profilesDiv .btnProfile img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profilesDiv .btnProfile img:hover{
+  border: 5px solid;
+  color: #322C2B;
+  /* transform: scale(1.1); */
+}
+
+.profilesDiv .btnCreateProfile{
+  height: 10vw;
+  min-height: 8.4rem;
+  max-height: 20rem;
+  width: 10vw;
+  min-width: 8.4px;
+  max-width: 20rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-top: 3rem;
+  margin-right: 2.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.profilesDiv .btnCreateProfile img{
+  background-color: #ffe6a7;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profilesDiv .btnCreateProfile img:hover{
+  border: 5px solid;
+  border-radius: 50%;
+
+  /* color: #070100; */
+  /* transform: scale(1.1); */
+}
+
+.profilesDiv span{
+  font-family: cursive;
+  width: inherit;
+  font-size: 2rem;
+  color: #322C2B;
+}
+
+@media screen and (max-width: 900px) {
+  .profilesDiv span{
+    font-family: cursive;
+    width: inherit;
+    font-size: 1rem;
+    color: #322C2B;
+  }
+
+  .main-div h1{
+    font-size: 5rem;
+  }
+
+  .profilesDiv .btnProfile{
+    height: 1vw;
+    min-height: 8rem;
+    max-height: 10rem;
+    width: 15vw;
+    min-width: 8.4px;
+    max-width: 20rem;
+  }
+
+  .profilesDiv .btnCreateProfile{
+    height: 10vw;
+    min-height: 8rem;
+    max-height: 10rem;
+    width: 10vw;
+    min-width: 8.4px;
+    max-width: 20rem;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-div h1{
+    font-size: 3.5rem;
+  }
+
+  .profilesDiv .btnProfile{
+    min-height: 5rem;
+    max-height: 10rem;
+  }
+
+  .profilesDiv .btnCreateProfile{
+    min-height: 5rem;
+    max-height: 10rem;
+  }
+}
+

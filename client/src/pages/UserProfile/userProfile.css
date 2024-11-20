@@ -1,0 +1,293 @@
+/* Estilos generales */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo-user-profile {
+  text-align: left; /* Alinear el texto a la izquierda */
+  margin-bottom: 0; /* Eliminar el margen inferior */
+  background-color: #743a3a; /* Color crema o beige */
+  padding: 2px 10px; /* Reducir padding superior e inferior a 2px */
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 70px; /* Reducir el valor de 'top' */
+  bottom: 5px;
+  z-index: 1000;
+  display: block;
+}
+.titulo-user-profile h1 {
+  margin: 0; /* Eliminar margen superior e inferior del h1 */
+  text-align: left; /* Alinear el texto a la izquierda */
+  font-size: 1.5rem; /* Tamaño de fuente ajustado */
+  color: white;
+}
+
+.container-user-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; /* Reducir el padding general */
+  box-sizing: border-box;
+  margin-bottom: 60px; /* Reducir espacio inferior */
+  padding-top: 8px;
+}
+
+.perfil-user-profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userCard-user-profile {
+  width: 100%;
+  margin-bottom: 8px; /* Reducir margen inferior */
+}
+
+.btn-user-profile {
+  padding: 8px 15px; /* Reducir padding del botón */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.imgPerro-user-profile {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.img-wrapper {
+  padding-top: 50px;
+  position: relative;
+  width: 350px;
+  height: 530px;
+  max-width: 350px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.img-user-profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px; /* Redondear tanto superior como inferior */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+/* Overlay para el nombre y la edad */
+.overlay-user-profile {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
+}
+
+.nombre-user-profile,
+.años-user-profile {
+  color: white;
+  font-size: 1.1rem; /* Reducir tamaño de fuente */
+  margin: 0;
+  padding-right: 4px;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  .container-user-profile {
+    flex-direction: row;
+  }
+
+  .perfil-user-profile {
+    flex: 1;
+    max-width: 30%;
+  }
+
+  .imgPerro-user-profile {
+    flex: 2;
+    max-width: 70%;
+    padding: 10px;
+  }
+
+  .img-user-profile {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .container-user-profile {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  .imgPerro-user-profile {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .userCard-user-profile {
+    margin-bottom: 20px; /* Separar del perfil cuando la pantalla es pequeña */
+  }
+
+  .img-wrapper {
+    width: 100%; /* Asegurar que ocupe el 100% del contenedor en pantallas pequeñas */
+    max-width: 300px; /* Mantener un tamaño máximo */
+    height: auto; /* Ajuste automático de la altura */
+    margin: 0 auto; /* Centrar en pantallas pequeñas */
+    border-radius: 10px; /* Mantener el redondeo */
+  }
+
+  .img-user-profile {
+    width: 100%; /* Asegurar que la imagen se ajuste al ancho del contenedor */
+    height: auto; /* Ajuste automático de la altura */
+    border-radius: 10px; /* Mantener esquinas redondeadas */
+    object-fit: cover;
+  }
+
+  .overlay-user-profile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Asegurar que el overlay se mantenga dentro del contenedor */
+    height: auto; /* Ajustar automáticamente la altura */
+    padding: 5px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    border-radius: 0 0 10px 10px; /* Redondear solo las esquinas inferiores */
+    box-sizing: border-box;
+    overflow: hidden; /* Mantener contenido dentro de los bordes */
+  }
+  .perfil-user-profile {
+    width: 300px;
+  }
+  .titulo-user-profile {
+    display: none !important;
+  }
+}
+
+/* .tinder-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 262px;
+  height: 73px;
+  object-fit: cover;
+}
+.nombre {
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+.aos,
+.nombre {
+  position: relative;
+  font-weight: 800;
+  text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
+}
+.descripcion {
+  overflow: hidden;
+  flex-direction: row;
+  gap: var(--gap-7xs);
+}
+.descripcion,
+.frameinfoperro,
+.frameinfoperro-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameinfoperro {
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+}
+.frameinfoperro-wrapper {
+  position: absolute;
+  top: 210px;
+  left: 720px;
+  border-radius: var(--br-xl);
+  width: 393px;
+  flex-direction: row;
+  padding: var(--padding-457xl) var(--padding-8xl) var(--padding-xl);
+  box-sizing: border-box;
+  background-image: url(./public/frame-107@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color1);
+  width: 440px;
+  height: 78px;
+}
+.perfil {
+  position: absolute;
+  top: 15px;
+  left: 65px;
+  font-weight: 800;
+}
+.basilcaret-down-solid-icon {
+  position: absolute;
+  top: 0;
+  left: -7px;
+  width: 40px;
+  height: 40.1px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.btnvolverhome {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 19px;
+  left: 13px;
+  width: 33px;
+  height: 39.9px;
+  overflow: hidden;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  width: 440px;
+  height: 78px;
+  color: var(--black);
+  font-family: var(--font-es-peak-trial);
+}
+.desktop-8 {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-16xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+} */
