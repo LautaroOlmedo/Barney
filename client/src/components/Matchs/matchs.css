@@ -1,25 +1,22 @@
 /* Estilo para las imágenes en Matchs */
 .matches-grid {
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(2, 150px); /* 2 columnas de 150px cada una */
-  gap: 10px; /* Espacio entre imágenes */
-  justify-content: start; /* Alinea las imágenes al inicio (izquierda) */
+  grid-template-columns: repeat(2, 150px); /* 2 columnas */
+  column-gap: 50px; /* Espacio horizontal entre columnas */
+  row-gap: 30px; /* Espacio vertical entre filas */
+  justify-content: start; /* Alinea al inicio horizontalmente */
 }
 
 .match-image {
-  width: 150px;
-  height: 150px;
-  position: relative; /* Posición relativa para el nombre */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  margin-top: 100px;
 }
 
 .match-image img {
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
+  border-radius: 10%;
 }
 
 /* Estilo del nombre similar al de Home */

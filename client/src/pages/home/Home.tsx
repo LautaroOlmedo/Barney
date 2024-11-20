@@ -7,7 +7,7 @@ import { Matchs } from "../../components/Matchs/Matchs";
 export const HomePage: React.FC<{ user: User; dog: Dog }> = ({ user, dog }) => {
   return (
     <div>
-      <div className="matchs-section">
+      <div className="matches-section">
         <Matchs dog={user.dogs[0]} />
       </div>
 

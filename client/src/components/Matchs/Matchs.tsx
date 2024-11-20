@@ -1,6 +1,6 @@
 import React from "react";
-import { Dog } from "../../types/Dog";
 import "./matchs.css";
+import { Dog } from "../../types/Dog";
 
 export const Matchs: React.FC<{ dog: Dog }> = ({ dog }) => {
   return (
@@ -9,8 +9,7 @@ export const Matchs: React.FC<{ dog: Dog }> = ({ dog }) => {
         <div key={`${dog.ID}-${imgIndex}`} className="match-image">
           <img src={image} alt={`${dog.Name} ${imgIndex + 1}`} />
           <div className="dog-info">
-            <p>{dog.Name}</p>{" "}
-            {/* Nombre debajo de la imagen con el mismo estilo que en Home */}
+            <p>{dog.Name}</p>
           </div>
         </div>
       ))}

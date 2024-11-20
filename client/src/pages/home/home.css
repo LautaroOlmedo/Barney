@@ -5,12 +5,12 @@
   background-color: #f5f5f5; /* Fondo gris claro para el contenedor */
 }
 
-/* Matchs section aligned to the left */
-.matches-section {
+Matchs section aligned to the left .matches-section {
+  margin-top: 100px;
   display: flex; /* Flexbox para la alineación interna de los elementos */
   justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
   width: 30%; /* La sección de coincidencias ocupará el 30% del ancho */
-  padding: 20px; /* Espaciado interno de 20px en todos los lados */
+  margin-left: 10px;
 }
 
 /* Main content aligned to the center */
@@ -36,7 +36,7 @@
   border-radius: 15px; /* Bordes redondeados de 15px */
   overflow: hidden; /* Esconde cualquier contenido que se salga del contenedor */
   box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Sombra para dar efecto de profundidad */
-  margin-top: -308px; /* Ajusta este valor según necesites; usa un valor negativo para subir la sección */
+  margin-top: -305px; /* Ajusta este valor según necesites; usa un valor negativo para subir la sección */
 }
 
 /* Main image */
@@ -48,13 +48,14 @@
 
 /* Dog info (name and age) */
 .dog-info {
-  position: absolute; /* Posiciona el elemento relativo a su contenedor */
-  bottom: 10px; /* A 10px del fondo del contenedor */
-  left: 10px; /* A 10px del borde izquierdo del contenedor */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
-  color: white; /* Texto blanco */
-  padding: 5px 10px; /* Espaciado interno de 5px vertical y 10px horizontal */
-  border-radius: 40px; /* Bordes redondeados de 10px */
+  position: absolute;
+  bottom: 5px; /* Posiciona el texto cerca del borde inferior */
+  left: 5px; /* Un poco de margen a la izquierda */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  color: white; /* Color del texto en blanco */
+  padding: 2px 5px; /* Un poco de espacio interno */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 12px; /* Tamaño de fuente más pequeño que en el componente Home */
 }
 
 .dog-info h2 {
