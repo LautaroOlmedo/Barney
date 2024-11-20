@@ -50,7 +50,7 @@ export const NavBar: React.FC<{}> = ({}) => {
         </div>
         <div>
           <Link to={"/dogProfileSelect"} className="navbar-link">
-            Cambiar Perro
+            Seleccionar Perfil
           </Link>
         </div>
 
