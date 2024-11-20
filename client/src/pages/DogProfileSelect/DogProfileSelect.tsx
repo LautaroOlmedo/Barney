@@ -7,8 +7,7 @@ import { dogData } from "../../mocks/dogMockData";
 
 
 export const DogProfileSelect: React.FC = () => {
-    // const user = data[0]; 
-    // const dogs = user.dogs;   
+    
     // Comentando esta dos lineas y dejando la de abajo hace que no cambien los perros segun el perfil, pero hace que si se actualizan los perros y se agreguen en el DogProfileSelect 
     const Dog = dogData;
     const navigate = useNavigate(); //hook para manejar la navegacion

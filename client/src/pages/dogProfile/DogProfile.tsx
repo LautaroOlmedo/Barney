@@ -25,7 +25,7 @@ export const DogProfilePage: React.FC = () => {
     }
   })
   
-  // const dog = (location.state?.dog as Dog) || dogData[0];
+  
   const user = (location.state?.user as User) || data[0];
 
   const handleUpdateDogProfile = () => {
