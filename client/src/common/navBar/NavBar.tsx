@@ -44,16 +44,10 @@ export const NavBar: React.FC<{}> = ({}) => {
           </Link>
         </div>
         <div>
-          <Link to={"/messages"} className="navbar-link">
-            Mensajes
-          </Link>
-        </div>
-        <div>
           <Link to={"/dogProfileSelect"} className="navbar-link">
             Cambiar Perro
           </Link>
         </div>
-
         <div className="navbar-buttons">
           <button className="premium-button" onClick={openPremium}>
             Premium
