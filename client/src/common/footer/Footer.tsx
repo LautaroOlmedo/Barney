@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-// import EmergentFooter from "../../components/emergentFooter/EmergentFooter";
+import EmergentFooter from "../../components/emergentFooter/EmergentFooter";
 
 export const Footer = () => {
   const [isEmergentVisible, setEmergentVisible] = useState(false);
@@ -33,7 +33,7 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      {/* {isEmergentVisible && <EmergentFooter onClose={handleCloseEmergent} />} */}
+      {isEmergentVisible && <EmergentFooter onClose={handleCloseEmergent} />}
     </footer>
   );
 };

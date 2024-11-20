@@ -17,6 +17,7 @@ body {
   top: 70px; /* Reducir el valor de 'top' */
   bottom: 5px;
   z-index: 1000;
+  display: block;
 }
 .titulo-user-profile h1 {
   margin: 0; /* Eliminar margen superior e inferior del h1 */
@@ -179,6 +180,9 @@ body {
   }
   .perfil-user-profile {
     width: 300px;
+  }
+  .titulo-user-profile {
+    display: none !important;
   }
 }
 
