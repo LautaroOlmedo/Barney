@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Dog } from "../../types/Dog";
 import { User } from "../../types/User";
@@ -10,7 +10,22 @@ import { data } from "../../mocks/userMockData";
 export const DogProfilePage: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const dog = (location.state?.dog as Dog) || dogData[0];
+
+  // Cargar el perfil del perro desde localStorage o usar el perfil pasado por 'location.state'
+  const[dog, setDog] = useState<Dog>(
+    ()=>
+    (location.state?.dog as Dog) ||
+    JSON.parse(localStorage.getItem("selectedDog") as string) ||
+    dogData[0]
+  );
+
+  useEffect(() => {
+    if (location.state?.dog){
+      localStorage.setItem("selectedDog", JSON.stringify(location.state.dog));
+    }
+  })
+  
+  // const dog = (location.state?.dog as Dog) || dogData[0];
   const user = (location.state?.user as User) || data[0];
 
   const handleUpdateDogProfile = () => {

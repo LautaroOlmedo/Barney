@@ -1,7 +1,6 @@
 import React from "react";
 import {useNavigate } from "react-router-dom";
 import { Dog } from "../../types/Dog";
-import { User } from "../../types/User";
 import "./DogProfileSelect.css";
 import { data } from "../../mocks/userMockData";
 import { dogData } from "../../mocks/dogMockData";
@@ -19,6 +18,10 @@ export const DogProfileSelect: React.FC = () => {
     }
 
     const handleSelectProfile = (dog: Dog) =>{
+        //Guardar el perfil seleccionado en localStorage
+        localStorage.setItem("selectedDog", JSON.stringify(dog));
+
+        //Navegar al perfil del perro seleccionado
         navigate("/dogProfile", {
             state: { dog }, //pasar el objeto 'dog' al estado
         });
