@@ -108,3 +108,9 @@
   border-radius: 50%; /* Bordes redondeados en forma de círculo */
   padding: 5px; /* Espaciado interno de 5px */
 }
+
+@media screen and (max-width: 900px) {
+  .main-image-section {
+    margin-top: 0px; /* Ajusta este valor según necesites; usa un valor negativo para subir la sección. De esta manera centramos la imagen. */
+  }
+}

@@ -21,7 +21,7 @@ export const MessagesPage: React.FC = () => {
             <img
               src={user.image}
               alt={`${user.Username}`}
-              className="match-image"
+              className="messages-match-image"
             />
             <div className="match-info">
               <h3>{user.Username}</h3>

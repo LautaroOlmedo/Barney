@@ -176,4 +176,7 @@ body {
   .perfil-dog-profile {
     width: 300px;
   }
+  .titulo-dog-profile {
+    display: none !important;
+  }
 }
