@@ -29,7 +29,7 @@ export const CreateProfileDog: React.FC = () => {
         Name: dogname,
         Age: age,
         Description: descript,
-        images: ["../img/dogProfileImg/newDogProfile"],
+        images: ["../img/dogProfileImg/newDogProfile.png"],
         matches: [],
         likes: [],
       };
