@@ -1,0 +1,190 @@
+.container-mensajes {
+  display: flex;
+  box-sizing: border-box;
+  height: calc(
+    100vh - 120px
+  ); /* Altura total menos el espacio para el footer y navbar */
+  margin-bottom: 20px; /* Espacio entre el footer y el navbar */
+  padding-bottom: 20px; /* Espacio adicional para el footer */
+  margin-top: 60px; /* Ajusta esto para dejar espacio para el navbar */
+}
+
+.left-column-mensajes {
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 10px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.match-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.match-item:hover {
+  background-color: #e6e6e6;
+}
+
+.match-item.active {
+  background-color: #d9d9d9;
+}
+
+.match-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.match-info h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.match-info p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.match-info small {
+  color: #666;
+}
+
+/* Columna central - Chat */
+.center-column-mensajes {
+  width: 50%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegúrate de que el contenido se alinee correctamente */
+  padding: 10px;
+}
+.select-chat-text {
+  align-self: center;
+}
+
+.chat-section {
+  flex-grow: 1; /* Permite que el chat ocupe el espacio restante */
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-history {
+  flex-grow: 1; /* Ocupa todo el espacio disponible */
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+
+.chat-message {
+  margin: 5px 0;
+}
+
+.my-message {
+  text-align: right;
+  color: blue;
+}
+
+.other-message {
+  text-align: left;
+  color: green;
+}
+
+.chat-input-section {
+  display: flex;
+  margin-top: 10px; /* Espacio entre el historial de chat y la barra de entrada */
+}
+
+.chat-input {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  border: 1px solid #ccc; /* Bordes */
+  border-radius: 20px; /* Hacer la barra de entrada más redonda */
+  padding: 10px; /* Espaciado interno */
+  margin-right: 10px; /* Espacio entre el input y el botón */
+}
+
+.send-button {
+  border: none; /* Sin bordes */
+  border-radius: 20px; /* Hacer el botón más redondo */
+  background-color: violet; /* Color del botón */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Columna derecha - Info del usuario */
+.right-column-mensajes {
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.user-info-section {
+  text-align: center;
+}
+
+.image-container {
+  position: relative; /* Necesario para que los elementos dentro se posicionen correctamente */
+  display: inline-block;
+  width: 70%; /* Ajusta el tamaño según tus necesidades */
+}
+
+.user-image {
+  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Degradado en la parte inferior de la imagen */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25%; /* Ajusta la altura del degradado */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  z-index: 1; /* Coloca el degradado debajo del texto */
+  border-radius: 0 0 10px 10px; /* Asegúrate de que el degradado siga el borde redondeado de la imagen */
+}
+
+/* Estilo para el nombre del usuario dentro de la imagen */
+.overlay-username {
+  position: absolute;
+  bottom: 10px; /* Ajusta la posición del texto */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.2rem;
+  z-index: 2; /* Coloca el nombre por encima del degradado */
+}
+
+.user-info-section h3 {
+  margin: 10px 0;
+}
+
+.user-info-section p {
+  color: #666;
+}
+@media (max-width: 900px) {
+  .left-column-mensajes,
+  .right-column-mensajes {
+    display: none; /* Ocultar columnas izquierda y derecha */
+  }
+
+  .center-column-mensajes {
+    width: 100%; /* El chat ocupará todo el ancho */
+  }
+
+  .header-mobile {
+    display: flex; /* Mostrar barra superior con la imagen y nombre del usuario */
+  }
+}

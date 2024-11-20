@@ -1,0 +1,208 @@
+body {
+  padding: 37px 0px 0px 0px;
+}
+
+/* .navbar {
+  background-color: #3e3232;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+} */
+
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #deb887;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #3e3232;
+  display: block;
+  padding: 23px 20px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.navbar-link:hover {
+  transform: scale(1.1);
+  color: black;
+  background-color: #eceff1;
+}
+
+.navbar-logo img {
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.2);
+}
+
+.navbar-buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.premium-button {
+  font-weight: 700;
+  color: #3e3232;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-right: 10px; /* Ajuste del margen entre los botones */
+}
+
+.navbar-button {
+  font-weight: 700;
+  color: #3e3232;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.premium-button:hover {
+  background-color: black; /* Fondo negro al pasar el cursor */
+  color: red; /* Texto dorado al pasar el cursor */
+}
+.navbar-button:hover {
+  background-color: #e2f1f8;
+  color: black;
+}
+.navbar-button:hover, .premium-button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1700px) {
+  .navbar-buttons {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    padding: 0px 0px 0px 0px;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  /* Diseño del boton */
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  /* Añade y diseña "hamburguesa" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition: 0.3s;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px; /* Coloca la línea superior */
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px; /* Coloca la línea inferior */
+  }
+
+  /* Si selecciona el checkbord muestra el menu */
+  #menu__toggle:checked ~ .navbar {
+    display: block;
+    visibility: visible;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+  }
+  /* Contenedor del menu*/
+  .navbar {
+    display: none;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: #deb887;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+  }
+
+  /* Elementos del menu*/
+  .navbar-link {
+    display: block;
+    padding: 12px 24px;
+    /* color: #333; */
+    color: #743a3a;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  .navbar-link:hover {
+    background-color: #cfd8dc;
+  }
+
+  .navbar-buttons {
+    padding: 12px 24px;
+    margin: 10px 20px;
+  }
+
+  /* Transformaciones del menú/hamburguesa cuando está activado */
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .navbar {
+    visibility: visible;
+    left: 0;
+  }
+}

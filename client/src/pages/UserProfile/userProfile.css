@@ -1,0 +1,276 @@
+/* Estilos generales */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo-user-profile {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: #ffe6a7; /* Color crema o beige */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 60px; /* Ajustar según la altura del navbar */
+}
+
+.container-user-profile {
+  display: flex;
+  justify-content: space-between; /* Dejar igual espacio a ambos lados */
+  align-items: center; /* Asegura que los elementos estén centrados verticalmente */
+  padding: 20px; /* Agregar un padding general */
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+.perfil-user-profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userCard-user-profile {
+  width: 100%;
+  margin-bottom: 10px; /* Reducir margen inferior */
+}
+
+.btn-user-profile {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.imgPerro-user-profile {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; /* Asegura que la imagen esté alineada con la UserCard */
+  position: relative;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 350px; /* Incrementar ligeramente el tamaño */
+  height: 550px; /* Mantener proporción */
+  overflow: hidden; /* Para que el overlay no salga de los límites */
+  margin-left: auto; /* Asegura que se alinee con el espacio */
+  margin-right: auto; /* Espacio equilibrado a ambos lados */
+}
+
+.img-user-profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative; /* Necesario para la superposición del overlay */
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+/* Overlay para el nombre y la edad */
+.overlay-user-profile {
+  position: absolute;
+  bottom: 0; /* Alinear con la parte inferior de la imagen */
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.7)
+  ); /* Degradado más pequeño */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Mantener todo alineado a la izquierda */
+  box-sizing: border-box;
+}
+
+.userCard-user-profile {
+  width: 300px; /* Tamaño fijo */
+  flex-shrink: 0; /* Evita que se reduzca con el tamaño de pantalla */
+}
+
+/* Estilo del nombre y la edad juntos */
+.nombre-user-profile,
+.años-user-profile {
+  color: white;
+  font-size: 1.3rem;
+  margin: 0; /* Eliminar márgenes para evitar desalineación */
+  padding-right: 5px; /* Espacio entre nombre y edad */
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  .container-user-profile {
+    flex-direction: row;
+  }
+
+  .perfil-user-profile {
+    flex: 1;
+    max-width: 30%;
+  }
+
+  .imgPerro-user-profile {
+    flex: 2;
+    max-width: 70%;
+    padding: 10px;
+  }
+
+  .img-user-profile {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .container-user-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgPerro-user-profile {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .userCard-user-profile {
+    margin-bottom: 20px; /* Separar del perfil cuando la pantalla es pequeña */
+  }
+
+  .img-wrapper {
+    width: 300px; /* Tamaño más pequeño en pantallas pequeñas */
+    height: 450px;
+    margin: 0 auto; /* Centrar en pantallas pequeñas */
+  }
+
+  .img-user-profile {
+    width: 80%;
+  }
+
+  .btn-user-profile {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .overlay-user-profile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Asegurar que el overlay se mantenga dentro de la imagen */
+  }
+}
+
+/* .tinder-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 262px;
+  height: 73px;
+  object-fit: cover;
+}
+.nombre {
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+.aos,
+.nombre {
+  position: relative;
+  font-weight: 800;
+  text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
+}
+.descripcion {
+  overflow: hidden;
+  flex-direction: row;
+  gap: var(--gap-7xs);
+}
+.descripcion,
+.frameinfoperro,
+.frameinfoperro-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameinfoperro {
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+}
+.frameinfoperro-wrapper {
+  position: absolute;
+  top: 210px;
+  left: 720px;
+  border-radius: var(--br-xl);
+  width: 393px;
+  flex-direction: row;
+  padding: var(--padding-457xl) var(--padding-8xl) var(--padding-xl);
+  box-sizing: border-box;
+  background-image: url(./public/frame-107@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color1);
+  width: 440px;
+  height: 78px;
+}
+.perfil {
+  position: absolute;
+  top: 15px;
+  left: 65px;
+  font-weight: 800;
+}
+.basilcaret-down-solid-icon {
+  position: absolute;
+  top: 0;
+  left: -7px;
+  width: 40px;
+  height: 40.1px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.btnvolverhome {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 19px;
+  left: 13px;
+  width: 33px;
+  height: 39.9px;
+  overflow: hidden;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  width: 440px;
+  height: 78px;
+  color: var(--black);
+  font-family: var(--font-es-peak-trial);
+}
+.desktop-8 {
+  width: 100%;
+  position: relative;
+  background-color: var(--white);
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-16xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+} */

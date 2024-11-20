@@ -1,0 +1,50 @@
+[
+  {
+    "ID": "1",
+    "User": {
+      "Person": {
+        "ID": "1",
+        "Name": "John",
+        "Lastname": "Doe",
+        "age": 30,
+        "DNI": "12345678A"
+      },
+      "Username": "johndoe",
+      "Password": "password123",
+      "emails": ["john@example.com"],
+      "phones": ["123-456-789"]
+    },
+    "Age": 5,
+    "Name": "Buddy",
+    "Description": "A friendly golden retriever.",
+    "images": [
+      "/img/dogProfileImg/perfilCuco.jpeg",
+      "/img/dogProfileImg/border-collie.jfif",
+      "/img/dogProfileImg/golden-retriever.jpeg"
+    ]
+  },
+  {
+    "ID": "2",
+    "User": {
+      "Person": {
+        "ID": "2",
+        "Name": "Jane",
+        "Lastname": "Smith",
+        "age": 25,
+        "DNI": "87654321B"
+      },
+      "Username": "janesmith",
+      "Password": "securepassword",
+      "emails": ["jane@example.com", "jane.smith@example.com"],
+      "phones": ["987-654-321", "555-555-555"]
+    },
+    "Age": 3,
+    "Name": "Max",
+    "Description": "A playful Labrador.",
+    "images": [
+      "/img/dogProfileImg/perfilCuco.jpeg",
+      "/img/dogProfileImg/border-collie.jfif",
+      "/img/dogProfileImg/golden-retriever.jpeg"
+    ]
+  }
+]
