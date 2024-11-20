@@ -13,6 +13,7 @@ import { DogUpdatePage } from "./pages/dogProfile/dogUpdatePage";
 import { RegisterPage } from "./pages/register/Register";
 import { Matchs } from "./components/Matchs/Matchs";
 import { MessagesPage } from "./pages/messages/MensajesPage";
+import { CreateProfileDog } from "./pages/DogProfileSelect/dogCreateProfile";
 
 export const AppRouter: React.FC<{}> = () => {
   return (
@@ -31,6 +32,7 @@ export const AppRouter: React.FC<{}> = () => {
         <Route path="/updateProfile" element={<UserUpdatePage />} />
         <Route path="/updateDogProfile" element={<DogUpdatePage />} />
         <Route path="/messages" element={<MessagesPage />} />
+        <Route path="/dogCreateProfile" element={<CreateProfileDog />} />
       </Route>
     </Routes>
   );

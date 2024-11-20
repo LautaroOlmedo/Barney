@@ -5,7 +5,7 @@ import { Dog } from "../types/Dog";
 export let dogData: Dog[] = [
   {
     ID: "1",
-    Name: "Changuito Zeballos",
+    Name: "Cuco",
     Age: 5,
     Description: "Buldog Frances",
     images: ["/img/dogProfileImg/perfilCuco.jpeg"],
@@ -59,4 +59,9 @@ export const updateDog = (updatedDog: Dog) => {
     dogData[index] = updatedDog;
     console.log("Data updated in userMockData: ", dogData[index]);
   }
+};
+
+export const addDog = (newDog: Dog) => {
+  dogData.push(newDog); // Agregar el nuevo perro al arreglo
+  console.log("Nuevo perro agregado a dogData: ", newDog);
 };
