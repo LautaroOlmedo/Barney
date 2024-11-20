@@ -33,7 +33,7 @@ export const matchesMockData: Match[] = [
   },
   {
     ID: "2",
-    Username: "MariaLopez",
+    Username: "TomasLopez",
     image: "/img/userProfileImg/userPhoto1.jpg",
     lastMessage: "¡Nos vemos! Cuco y Max se divertirán.",
     lastMessageTime: "09:15",
