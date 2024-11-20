@@ -109,6 +109,19 @@
   padding: 5px; /* Espaciado interno de 5px */
 }
 
+/* Estilo hover para los botones */
+.like-btn img:hover{
+  transform: scale(1.3);
+}
+
+.dislike-btn img:hover {
+  transform: scale(1.3);
+}
+
+.superlike-btn img:hover {
+  transform: scale(1.6);
+}
+
 @media screen and (max-width: 900px) {
   .main-image-section {
     margin-top: 0px; /* Ajusta este valor según necesites; usa un valor negativo para subir la sección. De esta manera centramos la imagen. */

@@ -34,6 +34,10 @@
   font-size: 12px; /* Tamaño de fuente más pequeño que en el componente Home */
 }
 
+.match-image img:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 900px) {
   .match-image {
     display: none;

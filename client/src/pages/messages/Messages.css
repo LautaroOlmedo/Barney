@@ -30,11 +30,12 @@
 }
 
 .match-item:hover {
-  background-color: #ffe6a7;
+  background-color: #cfd8dc;
+  
 }
 
 .match-item.active {
-  background-color: #ffe6a7;
+  background-color: #deb887;
 }
 
 .messages-match-image {

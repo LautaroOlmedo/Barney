@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import Premium from "../../components/Premium/Premium";
+import { useLocation } from "react-router-dom";
 // import { Dog } from "../../types/Dog";
 
 export const NavBar: React.FC<{}> = ({}) => {
@@ -14,6 +15,16 @@ export const NavBar: React.FC<{}> = ({}) => {
   const closePremium = () => {
     setPremiumOpen(false); // Cerrar la ventana emergente
   };
+
+  const location = useLocation();
+
+  if (location.pathname === "/login") {
+    return null;
+  }
+
+  if (location.pathname === "/register") {
+    return null;
+  }
 
   return (
     <nav>
@@ -58,7 +69,9 @@ export const NavBar: React.FC<{}> = ({}) => {
           <button className="premium-button" onClick={openPremium}>
             Premium
           </button>
-          <button className="navbar-button">Cerrar Sesion</button>
+          <Link to={"/login"} >
+            <button className="navbar-button">Cerrar Sesion</button>
+          </Link>
         </div>
       </div>
       {isPremiumOpen && <Premium onClose={closePremium} />}
