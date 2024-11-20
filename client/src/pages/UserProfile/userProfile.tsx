@@ -17,7 +17,7 @@ export const UserProfilePage: React.FC = () => {
   return (
     <div>
       <div className="titulo-user-profile">
-        <h1>PERFIL</h1>
+        <h1>Perfil</h1>
       </div>
       <div className="container-user-profile">
         <div className="perfil-user-profile">
