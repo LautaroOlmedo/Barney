@@ -5,9 +5,7 @@ import { useForm } from "./hooks/useForm";
 import { data } from "../../mocks/userMockData";
 import { HomePage } from "../home/Home";
 
-
 export const LoginPage = () => {
-
   const navigate = useNavigate();
   const [error, setError] = useState<string | null>(null);
 
@@ -18,10 +16,9 @@ export const LoginPage = () => {
 
   const { email, password } = formState;
 
-
   const validateUser = (email: string, password: string) => {
     return data.find(
-      user => user.emails[0] === email && user.Password === password
+      (user) => user.emails[0] === email && user.Password === password
     );
   };
 
@@ -34,66 +31,68 @@ export const LoginPage = () => {
       return;
     }
 
-    navigate('/home', { state: { user, dog: user.dogs[0] } });
+    navigate("/DogProfileSelect", { state: { user, dog: user.dogs[0] } });
 
     onResetForm();
     setError(null);
+  };
 
-  }
-  
   const onRegister = () => {
     // Redirige a la página de registro
-    navigate('/register');
+    navigate("/register");
   };
 
   return (
     <div>
-       <div className="framelogin">
+      <div className="framelogin">
         <section className="frame-wrapper">
           <form className="frame" onSubmit={onLogin}>
             <input
-             name="email"
-             className="frame-item"
-             id="email"
-             type="email"
-             placeholder="Email"
-             value={email}
-             onChange={onInputChange}
-             required
-             autoComplete="off"
+              name="email"
+              className="frame-item"
+              id="email"
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={onInputChange}
+              required
+              autoComplete="off"
             />
             <input
-            className="frame-child"
-            name="password"
-            id="password"
-            type="password"
-            value={password}
-            onChange={onInputChange}
-            placeholder="Contraseña"
-            required
-            autoComplete="off"
+              className="frame-child"
+              name="password"
+              id="password"
+              type="password"
+              value={password}
+              onChange={onInputChange}
+              placeholder="Contraseña"
+              required
+              autoComplete="off"
             />
             <button type="submit" className="ingresar-wrapper" id="btnLogin">
-               <div className="ingresar">Ingresar</div>
+              <div className="ingresar">Ingresar</div>
             </button>
 
             {error && <div className="error-message">{error}</div>}
 
-            <button className="btnregister" id="Registrarse" onClick={onRegister}>
+            <button
+              className="btnregister"
+              id="Registrarse"
+              onClick={onRegister}
+            >
               Registrarse
             </button>
 
-             <div className="frame1">
-               <img
-               className="tinder-1-icon"
-               alt=""
-               src="./img/barneyLogos/namePawBrown.png" />
-             </div>
-
+            <div className="frame1">
+              <img
+                className="tinder-1-icon"
+                alt=""
+                src="./img/barneyLogos/namePawBrown.png"
+              />
+            </div>
           </form>
-         </section>
-        </div>
+        </section>
+      </div>
     </div>
   );
-
 };

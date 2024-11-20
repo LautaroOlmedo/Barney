@@ -28,11 +28,11 @@ export let dogData: Dog[] = [
     // },
   },
   {
-    ID: "4",
+    ID: "2",
     Name: "Homero",
     Age: 9,
     Description: "Golden Retriever",
-    images: ["/img/dogProfileImg/perfilCuco.jpeg"],
+    images: ["/img/dogProfileImg/golden-retriever.jpeg"],
     matches: [],
     likes: [],
     // User: {

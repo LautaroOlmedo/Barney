@@ -2,7 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors";
 import { userRouter } from "./infraestructure/user-router";
-import { productRouter } from "./infraestructure/product-router";
+import { subscriptionRouter } from "./infraestructure/subscription-router";
 
 export class ServerBootstrap {
   // ---> Clase inicia. Si la instancias y llamas al metodo start se inicia el servidor.
@@ -12,6 +12,7 @@ export class ServerBootstrap {
     this.server.use(morgan("dev")); // ---> Morgan permite modificar código y al guardar reinicia el servidor (por defecto esto no ocurre)
     this.server.use(cors()); // ---> SOS MUY PETE PARA ENTENDER ESTO TODAVÍA
     this.server.use("/user", userRouter); // ---> Le especifico al servidor que si llega una solicitud a /user derive esa petición al router userRouter
+    this.server.use("/subscription", subscriptionRouter);
     this.start(); // ---> DEBERÍAS SABER QUE HACE ESTO....
   }
 
