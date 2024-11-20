@@ -1,3 +1,6 @@
+.container{
+  margin-top: 120px;
+}
 .create-container {
     max-width: 400px;
     margin: 0 auto; /* Centrar el contenedor */

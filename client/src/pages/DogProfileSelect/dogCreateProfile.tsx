@@ -46,37 +46,39 @@ export const CreateProfileDog: React.FC = () => {
     };
   
     return (
-      <div className="create-container">
-        <h1>Crear Perfil de Perro</h1>
-        <form>
-          <div className="form-group">
-            <label>Nombre del Perro</label>
-            <input
-              type="text"
-              value={dogname}
-              onChange={(e) => setDogname(e.target.value)}
-            />
-          </div>
-          <div className="form-group">
-            <label>Edad</label>
-            <input
-              type="number"
-              value={age ?? ""}
-              onChange={(e) => setAge(Number(e.target.value))}
-            />
-          </div>
-          <div className="form-group">
-            <label>Descripción</label>
-            <input
-              type="text"
-              value={descript}
-              onChange={(e) => setDescript(e.target.value)}
-            />
-          </div>
-          <button className="btn" onClick={handleSave}>
-            <h3>Guardar</h3>
-          </button>
-        </form>
+      <div className="container">
+        <div className="create-container">
+          <h1>Crear Perfil de Perro</h1>
+          <form>
+            <div className="form-group">
+              <label>Nombre del Perro</label>
+              <input
+                type="text"
+                value={dogname}
+                onChange={(e) => setDogname(e.target.value)}
+              />
+            </div>
+            <div className="form-group">
+              <label>Edad</label>
+              <input
+                type="number"
+                value={age ?? ""}
+                onChange={(e) => setAge(Number(e.target.value))}
+              />
+            </div>
+            <div className="form-group">
+              <label>Descripción</label>
+              <input
+                type="text"
+                value={descript}
+                onChange={(e) => setDescript(e.target.value)}
+              />
+            </div>
+            <button className="btn" onClick={handleSave}>
+              <h3>Guardar</h3>
+            </button>
+          </form>
+        </div>
       </div>
     );
   };
